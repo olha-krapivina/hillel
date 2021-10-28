@@ -166,6 +166,7 @@ ul{
 .header-email{
     font-size: 17px;
     font-weight: 500;
+    margin-top: 5px;
 }
 .header-email::before{
     content: url(../img/email-icon.png);
@@ -207,6 +208,42 @@ ul{
 
 /* header end */
 
-/* main start */
+/* intro section start */
 
-/* main end */
+.intro__wrap{
+    display: flex;
+    margin-top: 30px;
+}
+.inrto__content{
+    display: flex;
+    flex-flow: column wrap;
+    width: 675px;
+    margin-top: 85px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.inrto__content > p{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 33px 0;
+}
+.inrto__content > p > span{
+    font-weight: 800;
+}
+.intro__button{
+    width: 211px;
+    height: 50px;
+    background: linear-gradient(90deg, #87AFF1 0%,#6C80CB 100%);
+    box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.4548);
+    border: none;
+    border-radius: 3px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* intro section end */
