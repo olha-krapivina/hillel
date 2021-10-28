@@ -1,6 +1,190 @@
-*, html, body {
+*, html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Regular.woff2),
+    url(../fonts/Gilroy-Regular.woff);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Medium.woff2),
+    url(../fonts/Gilroy-Medium.woff);
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-SemiBold.woff2),
+    url(../fonts/Gilroy-SemiBold.woff);
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Bold.woff2),
+    url(../fonts/Gilroy-Bold.woff);
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-ExtraBold.woff2),
+    url(../fonts/Gilroy-ExtraBold.woff);
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Black.woff2),
+    url(../fonts/Gilroy-Black.woff);
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* --- */
+
+body{
+    font-family: 'Gilroy';
+    color: #333333;
+}
+
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header__wrap{
+    display: flex;
+    flex-direction: column;
+}
+.header__content-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* header logo */
+
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.header__logo-link{
+    margin-right: 25px;
+}
+.header__description{
+    width: 200px;
+    font-size: 14px;
+    font-weight: 500;
+    border-left: 2px solid #89AFEF;
+    padding-left: 25px;
+}
+
+/* header icons */
+
+ul{
+    display: flex;
+    justify-content: space-between  ;
+}
+.header__icon{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+.header__icon:last-child{
+    margin-right: 0;
+}
+.header__icon__whatsapp{
+    background-color: #2DD038;
+    box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+}
+.header__icon__viber{
+    background-color: #7B519D;
+    box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+}
+.header__icon__telegram{
+    background-color: #5BBAF0;
+    box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+}
+.header__icon-link{
+    display: inline-block;
+    padding: 12px;
+}
+
+/* header contacts */
+
+.header_contacts{
+    display: flex;
+    align-items: center;
+}
+.contacts-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.header-phone{
+    font-size: 20px;
+    font-weight: 700;
+}
+.header-phone::before{
+    content: url(../img/phone-icon.png);
+    margin-right: 9px;
+}
+.header-email{
+    font-size: 17px;
+    font-weight: 500;
+}
+.header-email::before{
+    content: url(../img/email-icon.png);
+    margin-right: 9px;
+}
+.header__button{
+    width: 195px;
+    height: 44px;
+    background: linear-gradient(90deg, #F6BD60 0%, #EB9355 80.38%, #E88952 100%);
+    box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+    border: none;
+    border-radius: 3px;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* header tabs */
+
+.header__nav-tabs{
+    margin-top: 40px;
+}
+.header__tab-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
 }
