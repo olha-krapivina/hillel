@@ -258,7 +258,8 @@ ul{
 .main__document__wrap,
 .document__wrapper,
 .main__program__wrap,
-.main__certificate__wrap{
+.main__certificate__wrap,
+.main__news__wrap{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -270,7 +271,8 @@ ul{
 .main__documents,
 .main__resume,
 .main__programs,
-.main__certificate{
+.main__certificate,
+.main__news{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -412,5 +414,32 @@ button{
     background-color: #F6F6F6;
     border: none;
     cursor: pointer;
+}
+
+/* news section */
+
+.main__news__wrap{
+    margin-top: 52px;
+}
+.main__news-item__ticket{
+    display: flex;
+    flex-flow: row wrap;
+    background: url(../img/jpg/wave-mini.jpg) no-repeat right;
+    /* background-color: red; */
+    width: 555px;
+}
+.main__news-content{
+    display: flex;
+    flex-flow: column wrap;
+/* }
+.main__news-content > p{
+    display: inline;
+} */
+.main__news-item{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 262px;
+    /* background-color: red; */
 }
 /* main end */
