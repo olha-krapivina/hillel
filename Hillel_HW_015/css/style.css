@@ -79,6 +79,16 @@ body{
     background-size: cover;
 }
 
+h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+h2{
+    font-size: 36px;
+    font-weight: 800;
+    align-self: center;
+}
+
 /* header start */
 
 .header__wrap{
@@ -140,7 +150,6 @@ ul{
 .header__icon-link{
     display: inline-block;
     padding: 12px;
-    transition: 1s;
 }
 
 /* header contacts */
@@ -195,15 +204,6 @@ ul{
     font-size: 16px;
     font-weight: 500;
     color: #333333;
-    transition: 1s;
-}
-.header__tab-link:hover,
-.header__tab-link:active,
-.header__tab-link:focus,
-.header__icon-link:hover,
-.header__icon-link:active,
-.header__icon-link:focus{
-    opacity: .75;
 }
 
 /* header end */
@@ -219,10 +219,6 @@ ul{
     flex-flow: column wrap;
     width: 675px;
     margin-top: 85px;
-}
-h1{
-    font-size: 40px;
-    font-weight: 900;
 }
 .inrto__content > p{
     font-size: 24px;
@@ -245,5 +241,64 @@ h1{
     color: #fff;
     cursor: pointer;
 }
-
 /* intro section end */
+
+/* main start */
+.main{
+    padding-top: 50px;
+}
+.main__content__wrap{
+    display: flex;
+    flex-flow: column wrap;
+}
+.document__wrapper{
+    display: flex;
+    flex-flow: column wrap;
+}
+.main__documents,
+.main__resume{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.main__document-item{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 262px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+    padding: 28px;
+    margin-top: 30px;
+}
+.main__document-item > p{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main__resume{
+    margin-top: 112px;
+}
+.main__resume-item{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 262px;
+}
+.main__resume-item > p{
+    text-align: center;
+}
+.main__resume-item > p:first-of-type{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.main__resume-item > p:last-of-type{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 7px;
+}
+/* main end */
