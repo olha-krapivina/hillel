@@ -74,9 +74,12 @@ body{
     margin: 0 auto;
 }
 
-.wrapper__background{
-    background: url(../img/wave.jpg) no-repeat center;
+.wrapper__background-img{
+    background: url(../img/jpg/wave.jpg) no-repeat center;
     background-size: cover;
+}
+.wrapper__background{
+    background-color: #F6F6F6;
 }
 
 h1{
@@ -86,7 +89,7 @@ h1{
 h2{
     font-size: 36px;
     font-weight: 900;
-    align-self: center;
+    /* align-self: center; */
 }
 
 /* header start */
@@ -123,7 +126,7 @@ h2{
 
 ul{
     display: flex;
-    justify-content: space-between  ;
+    justify-content: space-between;
 }
 .header__icon{
     width: 43px;
@@ -253,17 +256,21 @@ ul{
     padding-top: 50px;
 }
 .main__document__wrap,
-.main__program__wrap{
+.document__wrapper,
+.main__program__wrap,
+.main__certificate__wrap{
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
 }
-.document__wrapper{
+/* .document__wrapper{
     display: flex;
     flex-flow: column wrap;
-}
+} */
 .main__documents,
 .main__resume,
-.main__programs{
+.main__programs,
+.main__certificate{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -271,7 +278,7 @@ ul{
 .main__document-item{
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
+    align-items: center;
     width: 262px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
     padding: 28px;
@@ -285,7 +292,8 @@ ul{
 }
 
 .main__resume{
-    margin-top: 112px;
+    margin-top: 70px;
+    padding: 43px 0;
 }
 .main__resume-item{
     display: flex;
@@ -311,7 +319,7 @@ ul{
 
 /* program section */
 .main__program__wrap{
-    margin-top: 90px;
+    margin-top: 47px;
 }
 .main__programs{
     margin-top: 30px;
@@ -319,7 +327,7 @@ ul{
 .main__program-item{
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
+    align-items: center;
     width: 265px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
     padding: 25px;
@@ -357,4 +365,52 @@ ul{
     margin-top: 15px;
 }
 
+.main__list-sliders{
+    margin-top: 37px;
+}
+.main__slider-link{
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #E4E4E4;
+}
+.main__slider-link:hover,
+.main__slider-link:active,
+.main__slider-link:focus{
+    background: none;
+    border: 2px solid #84AAED;
+}
+.main__slider-item{
+    margin-right: 9px;
+}
+.main__slider-item:last-child{
+    margin-right: 0;
+}
+
+/* certificate section */
+
+.main__certificate__wrap{
+    margin-top: 76px;
+    padding: 48px 0 74px 0;
+}
+.main__certificate{
+    width: 100%;
+    margin-top: 45px;
+}
+.main__certificate-item{
+    margin-right: 36px;
+}
+.main__certificate-item:last-child{
+    margin-right: 0;
+}
+
+button{
+    width: 21px;
+    height: 40px;
+    align-self: center;
+    background-color: #F6F6F6;
+    border: none;
+    cursor: pointer;
+}
 /* main end */
