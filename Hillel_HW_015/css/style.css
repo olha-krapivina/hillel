@@ -72,6 +72,7 @@ body{
 .wrapper{
     max-width: 1140px;
     margin: 0 auto;
+    /* background:rgba(91, 186, 240, 0.5); */
 }
 
 .wrapper__background-img{
@@ -89,7 +90,7 @@ h1{
 h2{
     font-size: 36px;
     font-weight: 900;
-    /* align-self: center; */
+    align-self: center;
 }
 
 /* header start */
@@ -262,12 +263,7 @@ ul{
 .main__news__wrap{
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
 }
-/* .document__wrapper{
-    display: flex;
-    flex-flow: column wrap;
-} */
 .main__documents,
 .main__resume,
 .main__programs,
@@ -276,6 +272,7 @@ ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
 }
 .main__document-item{
     display: flex;
@@ -320,6 +317,7 @@ ul{
 }
 
 /* program section */
+
 .main__program__wrap{
     margin-top: 47px;
 }
@@ -333,7 +331,6 @@ ul{
     width: 265px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
     padding: 25px;
-    /* background: gray; */
 }
 .main__program-item > img{
     margin: auto;
@@ -344,10 +341,11 @@ ul{
 }
 .main__program-item > span{
     position: relative;
+    width: 100%;
     font-size: 16px;
     font-weight: 500;
     color: #53B43B;
-    text-align: center;
+    text-align: center; 
 }
 .main__program-item > span::before{
     position: absolute;
@@ -367,8 +365,11 @@ ul{
     margin-top: 15px;
 }
 
-.main__list-sliders{
+.main__nav-sliders{
     margin-top: 37px;
+}
+.main__list-sliders{
+    justify-content: center;
 }
 .main__slider-link{
     display: block;
@@ -431,8 +432,8 @@ button{
 .main__news-content{
     display: flex;
     flex-flow: column wrap;
-/* }
-.main__news-content > p{
+}
+/* .main__news-content > p{
     display: inline;
 } */
 .main__news-item{
