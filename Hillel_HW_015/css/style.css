@@ -69,6 +69,11 @@ body{
     color: #333333;
 }
 
+footer{
+    background-color: #333333;
+    margin-top: 70px;
+}
+
 .wrapper{
     max-width: 1140px;
     margin: 0 auto;
@@ -431,7 +436,7 @@ button{
     display: flex;
     flex-flow: row wrap;
     width: 572px;
-    background: url(../img/1141.png) no-repeat right;
+    background: url(../img/mini-wave.png) no-repeat right;
     background-color: #FAFAFB;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
     /* padding: 42px 0 0 32px; */
@@ -512,3 +517,131 @@ button{
     color: #fff;
 }
 /* main end */
+
+
+/* footer start */
+
+.footer__wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 56px 0;
+    color: #fff;
+}
+.footer__content-box{
+    display: flex;
+    flex-flow: column wrap;
+    width: 359px;
+}
+h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+}
+.footer__list,
+.footer__contacts-list{
+    flex-flow: column wrap;
+    margin-top: 27px;
+}
+.footer__list > li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 13px;
+}
+.footer__list > li:first-child{
+    margin-top: 0;
+}
+
+.footer__contact-item{
+    position: relative;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 17px;
+    padding-left: 35px;
+}
+.footer__contact-item__telegram::before{
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    content: url(../img/svg/telegram.svg);
+}
+.footer__contact-item__viber::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: url(../img/svg/viber.svg);
+}
+.footer__contact-item__whatsapp::before{
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    content: url(../img/svg/whatsapp.svg);
+}
+
+.footer_contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.footer-phone{
+    position: relative;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    color: #fff;
+    padding-left: 33px;
+    margin-bottom: 20px;
+}
+.footer-phone::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: url(../img/svg/call-answer.svg);
+}
+.footer-email{
+    position: relative;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #fff;
+    padding-left: 33px;
+}
+.footer-email::before{
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    content: url(../img/svg/mail-answer.svg);
+}
+.footer__button{
+    width: 262px;
+    height: 50px;
+    background: linear-gradient(90deg, #F6BD60 0%, #E88952 100%);
+    box-shadow: 0px 8px 15px rgba(242, 147, 81, 0.449492);
+    border: none;
+    border-radius: 3px;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.footer-logo-link{
+    display: inline-block;
+    margin-top: 52px;
+}
+.footer__label{
+    padding: 20px 0;
+    border: 1px solid #4E4E4E;
+}
+.footer__label p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #565656;
+    text-align: center;
+}
+/* footer end */
