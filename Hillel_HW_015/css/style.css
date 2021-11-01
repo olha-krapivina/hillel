@@ -86,7 +86,6 @@ footer{
 .wrapper{
     max-width: 1140px;
     margin: 0 auto;
-    /* background:rgba(91, 186, 240, 0.5); */
 }
 
 .wrapper__background-img{
@@ -272,7 +271,15 @@ ul{
     color: #fff;
     cursor: pointer;
 }
-
+.intro__img-box{
+    position: relative;
+}
+.intro__img{
+    position: absolute;
+}
+.intro__img-swadow{
+    margin-left: 10px;
+}
 /* intro section end */
 
 
@@ -299,7 +306,6 @@ ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    /* align-items: center; */
 }
 .main__document-item{
     display: flex;
@@ -460,7 +466,6 @@ button{
     background: url(../img/mini-wave.png) no-repeat right;
     background-color: #FAFAFB;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
-    /* padding: 42px 0 0 32px; */
 }
 .main__news-content{
     display: flex;
