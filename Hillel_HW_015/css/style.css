@@ -62,6 +62,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Heavy.woff2),
+    url(../fonts/Gilroy-Heavy.woff);
+    font-display: swap;
+    font-weight: 1000;
+    font-style: normal;
+}
+
 /* --- */
 
 body{
@@ -90,11 +99,11 @@ footer{
 
 h1{
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 1000;
 }
 h2{
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 1000;
     align-self: center;
 }
 
@@ -134,30 +143,34 @@ ul{
     display: flex;
     justify-content: space-between;
 }
-.header__icon{
+.header__icon-link{
+    display: block;
     width: 43px;
     height: 43px;
     border-radius: 50%;
-    margin-right: 18px;
-}
-.header__icon:last-child{
-    margin-right: 0;
 }
 .header__icon__whatsapp{
+    background: url(../img/whatsapp-icon.png) no-repeat center;
+    background-position: 51% 49%;
     background-color: #2DD038;
     box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
 }
 .header__icon__viber{
+    background: url(../img/viber-icon.png) no-repeat center;
     background-color: #7B519D;
     box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
 }
 .header__icon__telegram{
+    background: url(../img/telegram-icon.png) no-repeat;
+    background-position: 46% 49%;
     background-color: #5BBAF0;
     box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
 }
-.header__icon-link{
-    display: inline-block;
-    padding: 12px;
+.header__icon{
+    margin-right: 18px;
+}
+.header__icon:last-child{
+    margin-right: 0;
 }
 
 /* header contacts */
@@ -173,23 +186,31 @@ ul{
     margin-right: 30px;
 }
 .header-phone{
+    position: relative;
     font-size: 20px;
     font-weight: 700;
     color: #333333;
+    padding-left: 25px;
 }
 .header-phone::before{
-    content: url(../img/phone-icon.png);
-    margin-right: 9px;
+    content: url(../img/svg/phone-header.svg);
+    position: absolute;
+    top: 1px;
+    left: 0px;
 }
 .header-email{
+    position: relative;
     font-size: 17px;
     font-weight: 500;
     color: #333333;
+    padding-left: 25px;
     margin-top: 5px;
 }
 .header-email::before{
-    content: url(../img/email-icon.png);
-    margin-right: 9px;
+    content: url(../img/svg/mail-header.svg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 .header__button{
     width: 195px;
@@ -236,7 +257,7 @@ ul{
     margin: 33px 0;
 }
 .inrto__content > p > span{
-    font-weight: 800;
+    font-weight: 1000;
 }
 .intro__button{
     width: 211px;
@@ -592,7 +613,7 @@ h3{
     font-size: 19px;
     line-height: 22px;
     color: #fff;
-    padding-left: 33px;
+    padding-left: 32px;
     margin-bottom: 20px;
 }
 .footer-phone::before{
@@ -635,7 +656,7 @@ h3{
 }
 .footer__label{
     padding: 20px 0;
-    border: 1px solid #4E4E4E;
+    border-top: 1px solid #4E4E4E;
 }
 .footer__label p{
     font-weight: 500;
