@@ -28,6 +28,10 @@
     display: flex;
     justify-content: space-between;
 }
+.fx-jc-sa{
+    display: flex;
+    justify-content: space-around;
+}
 
 /* align-items */
 

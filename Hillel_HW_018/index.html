@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/flex.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>ACME</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header fx-jc-sb fl-ai-c">
             <nav class="header__menu">
-                <ul class="menu__list fx-row">
+                <ul class="menu__list fx-row fx-wrap">
                     <li class="menu__item">
                         <a href="#first" class="menu__link">First</a>
                     </li>
@@ -63,7 +64,7 @@
 
                 <section class="main__section fx-column fl-ai-c">
                     <p>Tagline</p>
-                    <h2>Long headline to turn your visitors into users</h2>
+                    <div class="box-h2"><h2>Long headline to turn your visitors into users</h2></div>
                     <p class="pg__description">Change the color to match your brand or vision, add your logo, choose the perfect thumbnail, remove the playbar, add speed controls, and more. Increase engagement with CTAs and custom end screens, or keep your video private and password-protected.</p>
                 </section>
 
@@ -93,7 +94,7 @@
                     <div class="content__section-4 fx-column fx-jc-c">
                         <h3>Long headline on two lines to turn your visitors into users and achieve more</h3>
                         <p>Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast</p>
-                        <ul class="pay__list fx-row fl-ai-c fx-wrap">
+                        <ul class="pay__list fx-row fx-jc-sb fl-ai-c fx-wrap">
                             <li class="pay__item">
                                 <a href="#" class="pay__link"><img src="./img/icon-PayPal.png" alt="PayPal"></a>
                             </li>
@@ -159,18 +160,16 @@
                             </div>
                         </div>
 
-                        <div class="content__section-7__pages fx-row">
-                                <div class="pages__block">
-                                    <p>First page</p>
-                                    <p>Second page</p>
-                                    <p>Third</p>
-                                    <p>Fourth</p>
-                                </div>
-                                <div class="pages__block">
-                                    <p>Fifth page</p>
-                                    <p>Sixth page</p>
-                                    <p>Eighth</p>
-                                </div>
+                        <div class="content__section-7__pages fl-ai-c">
+                            <ul class="page-list">
+                                <li><a href="#">First page</a></li>
+                                <li><a href="#">Second page</a></li>
+                                <li><a href="#">Third</a></li>
+                                <li><a href="#">Fourth</a></li>
+                                <li><a href="#">Fifth page</a></li>
+                                <li><a href="#">Sixth page</a></li>
+                                <li><a href="#">Eighth</a></li>
+                            </ul>
                         </div>
 
                         <div class="content__section-7__links fl-ai-c">
