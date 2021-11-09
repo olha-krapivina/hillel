@@ -68,9 +68,9 @@ h5{
     /* max-width: 1131px; */
     /* max-width: 1110px; */
     margin: 0 auto;
-    padding: 0 47px;
+    padding: 0 35px;
     box-sizing: content-box;
-    /* background-color: rgb(165, 208, 209); */
+    background-color: rgb(165, 208, 209);
 }
 
 /* header start */
@@ -81,7 +81,7 @@ h5{
     top: 0;
     left: 0;
     padding: 7px 30px;
-    /* background-color: red; */
+    background-color: red;
 }
 ._header__wrap{
     width: 50%;
@@ -101,6 +101,13 @@ h5{
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 0.1px;
+}
+
+.burger{
+    display: none;
+    width: 32px;
+    height: 32px;
+    background: url(../img/Burger.png) no-repeat center;
 }
 
 .header__action-btn{
@@ -128,10 +135,10 @@ h5{
 }
 
 .main{
-    padding-top: 50px;
+    padding-top: 60px;
 }
 .main__section{
-    /* background-color: rgba(255, 0, 0, 0.123); */
+    background-color: rgba(255, 0, 0, 0.123);
     padding: 60px 0;
 }
 .content__section-1,
@@ -139,13 +146,13 @@ h5{
 .content__section-4,
 .content__section-5{
     width: 445px;
-    /* background: salmon; */
+    background: salmon;
 }
 .img-container{
     display: flex;
     align-items: center;
     width: 555px;
-    /* background-color: red; */
+    background-color: red;
 }
 .img-container img{
     width: 100%;
@@ -193,7 +200,7 @@ input[type=email]::placeholder{
 /* section-2 */
 
 .box-h2{
-    /* background: red; */
+    background: red;
     width: 100%;
     text-align: center;
     margin: 12px 0 68px 0;
@@ -202,7 +209,7 @@ input[type=email]::placeholder{
 .pg__description{
     max-width: 540px;
     text-align: center;
-    /* background: salmon; */
+    background: salmon;
 }
 
 /* sectoin-3 */
@@ -224,11 +231,8 @@ input[type=email]::placeholder{
 .pay__list{
     margin-top: 40px;
 }
-.pay__item{
-    margin-right: 39px;
-}
-.pay__item:last-child{
-    margin-right: 0;
+.pay__item:not(:last-child){
+    margin: 0 39px 0 0;
 }
 
 /* section-5 */
@@ -252,7 +256,7 @@ input[type=email]::placeholder{
 
 .content__section-6{
     width: 460px;
-    /* background: salmon; */
+    background: salmon;
 }
 .content__section-6:first-of-type{
     padding-right: 110px;
@@ -283,7 +287,7 @@ input[type=email]::placeholder{
 }
 
 .content__section-7{
-    /* background-color:rgba(255, 0, 0, 0.123); */
+    background-color:rgba(255, 0, 0, 0.123);
     width: 285px;
 }
 
@@ -307,7 +311,7 @@ input[type=email]::placeholder{
 }
 .footer__email label{
     position: absolute;
-    left: 250px;
+    left: 90%;
 }
 .email-button{
     cursor: pointer;
@@ -321,16 +325,16 @@ input[type=email]{
     letter-spacing: 0.1px;
     outline: none;
     color: #67676d;
-    padding: 0 50px 0 15px;
+    padding: 0 35px 0 15px;
 }
 
 .content__section-7__pages{
-    /* background: rgba(255, 0, 0, 0.24); */
+    background: rgba(255, 0, 0, 0.24);
 }
 .page-list{
     display: block;
     columns: 2;
-    /* background: red; */
+    background: red;
 }
 .page-list li{
     margin: 0 60px 15px 0;
@@ -340,7 +344,7 @@ input[type=email]{
 }
 
 .content__section-7__links{
-    /* background: red; */
+    background: red;
     width: 165px;
 }
 .footer__list-links{
@@ -363,13 +367,13 @@ input[type=email]{
     position: absolute;
     top: 3px;
     left: 0;
-    content: url(../img/svg/icon-facebook.png);
+    content: url(../img/icon-facebook.png);
 }
 .footer__link__twitter::before{
     position: absolute;
     top: 3px;
     left: 0;
-    content: url(../img/svg/icon-twitter.png);
+    content: url(../img/icon-twitter.png);
 }
 
 
