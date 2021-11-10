@@ -63,14 +63,15 @@ h5{
     min-width: 100%;
 }
 ._container{
-    /* max-width: 1150px; */
     max-width: 1114px;
-    /* max-width: 1131px; */
-    /* max-width: 1110px; */
     margin: 0 auto;
     padding: 0 35px;
     box-sizing: content-box;
-    background-color: rgb(165, 208, 209);
+}
+.line{
+    display: none;
+    width: 100%;
+    border: 0.5px solid #F2F2F2;
 }
 
 /* header start */
@@ -81,7 +82,6 @@ h5{
     top: 0;
     left: 0;
     padding: 7px 30px;
-    background-color: red;
 }
 ._header__wrap{
     width: 50%;
@@ -138,7 +138,6 @@ h5{
     padding-top: 60px;
 }
 .main__section{
-    background-color: rgba(255, 0, 0, 0.123);
     padding: 60px 0;
 }
 .content__section-1,
@@ -146,13 +145,11 @@ h5{
 .content__section-4,
 .content__section-5{
     width: 445px;
-    background: salmon;
 }
 .img-container{
     display: flex;
     align-items: center;
     width: 555px;
-    background-color: red;
 }
 .img-container img{
     width: 100%;
@@ -200,7 +197,6 @@ input[type=email]::placeholder{
 /* section-2 */
 
 .box-h2{
-    background: red;
     width: 100%;
     text-align: center;
     margin: 12px 0 68px 0;
@@ -209,7 +205,6 @@ input[type=email]::placeholder{
 .pg__description{
     max-width: 540px;
     text-align: center;
-    background: salmon;
 }
 
 /* sectoin-3 */
@@ -256,7 +251,6 @@ input[type=email]::placeholder{
 
 .content__section-6{
     width: 460px;
-    background: salmon;
 }
 .content__section-6:first-of-type{
     padding-right: 110px;
@@ -279,15 +273,11 @@ input[type=email]::placeholder{
 
 /* footer start */
 
-.footer{
-    /* background: salmon; */
-}
 .footer-section-1{
     padding: 65px 0 85px 0;
 }
 
 .content__section-7{
-    background-color:rgba(255, 0, 0, 0.123);
     width: 285px;
 }
 
@@ -328,13 +318,10 @@ input[type=email]{
     padding: 0 35px 0 15px;
 }
 
-.content__section-7__pages{
-    background: rgba(255, 0, 0, 0.24);
-}
+
 .page-list{
     display: block;
     columns: 2;
-    background: red;
 }
 .page-list li{
     margin: 0 60px 15px 0;
@@ -344,7 +331,6 @@ input[type=email]{
 }
 
 .content__section-7__links{
-    background: red;
     width: 165px;
 }
 .footer__list-links{

@@ -168,5 +168,66 @@
 }
 
 @media screen and (max-width: 470px){
-    
+    .main__section__modifier{
+        flex-direction: column;
+    }
+    .content__section-6 h4,
+    .content__section-6 p,
+    .content__section-6 a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .line{
+        display: block;
+    }
+    .footer-section-2{
+        flex-direction: column;
+    }
+    .footer-section-2 p:not(:last-child){
+        margin-bottom: 16px;
+    }
+    .content__section-8{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer-section-1{
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 32px;
+        line-height: 38px;
+        margin: 0 0 32px 0;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .pay__list{
+        margin-top: 35px;
+    }
+    .pay__item{
+        margin-right: 0;
+    }
+    .pay__item__paypal{
+        width: 70px;
+    }
+    .pay__item__apple{
+        width: 40px;
+    }
+    .pay__item__samsung{
+        width: 95px;
+    }
+    .img-pay{
+        width: 100%;
+    }
+
+    .footer__email label{
+        left: 90%;
+    }
 }

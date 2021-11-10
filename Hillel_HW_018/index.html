@@ -49,12 +49,14 @@
                     <div class="content__section-1 fx-column fx-jc-c">
                         <p>Tagline</p>
                         <h1>Medium length display headline</h1>
-                        <div class="fx-row fx-wrap">
-                            <input type="text" name="text" id="text" placeholder="Placeholder">
-                            <label for="text">
-                                <button class="main__action-btn">Action</button>
-                            </label>
-                        </div>
+                        <form action="#">
+                            <div class="fx-row fx-wrap">
+                                <input type="text" name="text" id="text" placeholder="Placeholder">
+                                <label for="text">
+                                    <button class="main__action-btn">Action</button>
+                                </label>
+                            </div>
+                        </form>
                         <p>By clicking the Button you confirming that you’re agree with our following Terms and Conditions</p>
                     </div>
                     <div class="img-container">
@@ -95,17 +97,17 @@
                         <h3>Long headline on two lines to turn your visitors into users and achieve more</h3>
                         <p>Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast</p>
                         <ul class="pay__list fx-row fx-jc-sb fl-ai-c fx-wrap">
-                            <li class="pay__item">
-                                <a href="#" class="pay__link"><img src="./img/icon-PayPal.png" alt="PayPal"></a>
+                            <li class="pay__item pay__item__paypal">
+                                <a href="#" class="pay__link"><img class="img-pay" src="./img/icon-PayPal.png" alt="PayPal"></a>
                             </li>
-                            <li class="pay__item">
-                                <a href="#" class="pay__link"><img src="./img/icon-ApplePay.png" alt="ApplePay"></a>
+                            <li class="pay__item pay__item__apple">
+                                <a href="#" class="pay__link"><img class="img-pay" src="./img/icon-ApplePay.png" alt="ApplePay"></a>
                             </li>
-                            <li class="pay__item">
-                                <a href="#" class="pay__link"><img src="./img/icon-AndroidPay.png" alt="AndroidPay"></a>
+                            <li class="pay__item pay__item__android">
+                                <a href="#" class="pay__link"><img class="img-pay" src="./img/icon-AndroidPay.png" alt="AndroidPay"></a>
                             </li>
-                            <li class="pay__item">
-                                <a href="#" class="pay__link"><img src="./img/icon-SamsungPay.png" alt="SamsungPay"></a>
+                            <li class="pay__item pay__item__samsung">
+                                <a href="#" class="pay__link"><img class="img-pay" src="./img/icon-SamsungPay.png" alt="SamsungPay"></a>
                             </li>
                         </ul>
                     </div>
@@ -133,7 +135,7 @@
             <div class="main__img"></div>
 
             <div class="_container">
-                <section class="main__section fx-row fx-jc-c">
+                <section class="main__section main__section__modifier fx-row fx-jc-c">
                     <div class="content__section-6 fx-column fl-ai-c">
                         <h4>Medium length headline</h4>
                         <p>Change the color to match your brand or vision, add your logo, choose the perfect thumbnail, remove the playbar</p>
@@ -152,12 +154,14 @@
                             <a href="/" class="footer__logo">ACME</a>
                             <p>Join our newsletter to stay up to date on features and releases</p>
                             
-                            <div class="footer__email fx-row fx-wrap fl-ai-c">
-                                <input type="email" name="email" id="email" placeholder="Enter your email address">
-                                <label for="email">
-                                    <button class="email-button"><img src="./img/svg/icon-telegram.svg" alt="telegram"></button>
-                                </label>
-                            </div>
+                            <form action="#">
+                                <div class="footer__email fx-row fx-wrap fl-ai-c">
+                                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                                    <label for="email">
+                                        <button class="email-button"><img src="./img/svg/icon-telegram.svg" alt="telegram"></button>
+                                    </label>
+                                </div>
+                            </form>
                         </div>
 
                         <div class="content__section-7__pages fl-ai-c">
@@ -186,7 +190,11 @@
                             </ul>
                         </div>
                     </section>
-
+                </footer>
+            </div>
+            <div class="line"></div>
+            <div class="_container">
+                <footer class="footer">
                     <section class="footer-section-2 fx-jc-sb">
                         <p>&copy; 2018 Acme. All right reserved.</p>
                         <div class="content__section-8 fx-row">
