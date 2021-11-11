@@ -1,0 +1,164 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  color: #161d6f;
+}
+
+.wrapper {
+  position: relative;
+  width: 550px;
+  text-align: center;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.wrapper .img-logo {
+  width: 130px;
+  margin-bottom: 70px;
+}
+
+.wrapper p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.wrapper p.text-discnt {
+  display: inline-block;
+  background: #ffe097;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 3px 80px;
+}
+
+.wrapper p.text-discnt:hover {
+  -webkit-animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.wrapper p.main-content {
+  font-size: 18px;
+}
+
+.wrapper p.text-check {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 6em;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+span {
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  margin: 80px 0 20px 0;
+}
+
+li {
+  display: inline;
+}
+
+li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.icon-img {
+  width: 40px;
+}
+
+.img-back-position {
+  position: fixed;
+}
+
+.img-heart-1 {
+  width: 30%;
+  top: 10%;
+}
+
+.img-heart-2 {
+  width: 33%;
+  bottom: 0;
+  left: 70%;
+}
+
+.img-egg-1 {
+  width: 15%;
+  right: 15%;
+}
+
+.img-egg-2 {
+  width: 17%;
+  right: 0;
+}
+
+.img-egg-3 {
+  width: 17%;
+  top: 70%;
+  left: 21%;
+}
+
+.img-egg-4 {
+  width: 20%;
+  top: 70%;
+  right: 17%;
+}
+
+.img-egg-5 {
+  width: 20%;
+  top: 70%;
+  left: 5%;
+}
+/*# sourceMappingURL=style.css.map */
