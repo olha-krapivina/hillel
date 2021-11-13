@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap");
+*, html, body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #6f6f6f;
+}
+
+a {
+  text-decoration: none;
+  color: #6f6f6f;
+}
+
+button {
+  border: none;
+}
+
+.wrapper {
+  min-width: 100%;
+  background-color: #f5f5f5;
+  padding: 22px 0 0 0;
+}
+
+.container {
+  background: cadetblue;
+}
+
+.header__button {
+  font-size: 38px;
+  line-height: 34px;
+  font-weight: 600;
+  border: 3px solid #706b73;
+  border-radius: 2px;
+  padding: 8px 17px;
+}
+
+.header__button span {
+  color: #fa9a87;
+}
+
+.block__burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.burger {
+  display: block;
+  width: 37px;
+  height: 23px;
+  background: url(../img/Burger.png) no-repeat center;
+}
+
+.header__section-intro {
+  text-align: center;
+  width: 100%;
+  margin-top: 146px;
+}
+
+.header__section-intro h1 {
+  font-size: 50px;
+  line-height: 62px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.header__section-intro h1 span {
+  color: #fc7254;
+}
+
+.header__section-form {
+  background: red;
+}
+
+.header__form {
+  width: 100%;
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

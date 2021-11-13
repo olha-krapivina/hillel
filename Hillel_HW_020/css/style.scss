@@ -1,0 +1,89 @@
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import "variables";
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: $text-color;
+}
+
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+
+button{
+    border: none;
+}
+
+.wrapper{
+    min-width: 100%;
+    background-color: $background-color__wrapper;
+    padding: 22px 0 0 0;
+}
+
+// header start
+.container{
+    background: cadetblue;
+}
+
+.header__button{
+    font-size: 38px;
+    line-height: 34px;
+    font-weight: 600;
+    border: 3px solid #706b73;
+    border-radius: 2px;
+    padding: 8px 17px;
+    span{
+        color: #fa9a87;
+    }
+}
+
+.block__burger{
+    display: flex;
+    justify-content: right;
+}
+.burger{
+    display: block;
+    width: 37px;
+    height: 23px;
+    background: url(../img/Burger.png) no-repeat center;
+}
+
+.header__section-intro{
+    text-align: center;
+    width: 100%;
+    margin-top: 146px;
+    h1{
+        font-size: 50px;
+        line-height: 62px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        span{
+            color: $h-color;
+        }
+    }
+}
+
+.header__section-form{
+    background: red;
+}
+.header__form{
+    width: 100%;
+
+    background-color: #fff;
+}
+
+// .form-1{
+//     background: #000;
+// }
+
+// .col{
+//     background: red;
+//     border: 2px solid #000;
+// }
