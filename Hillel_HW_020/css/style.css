@@ -36,6 +36,7 @@ button {
   border: 3px solid #706b73;
   border-radius: 2px;
   padding: 8px 17px;
+  cursor: pointer;
 }
 
 .header__button span {
