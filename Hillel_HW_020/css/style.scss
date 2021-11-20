@@ -57,10 +57,10 @@ button{
     background: url(../img/Burger.png) no-repeat center;
 }
 
-.header__section-intro{
+.header__section-title{
     text-align: center;
     width: 100%;
-    margin-top: 146px;
+    margin: 146px 0 110px 0;
     h1{
         font-size: 50px;
         line-height: 62px;
@@ -76,6 +76,7 @@ form{
     background-color: #fff;
     border-radius: 3px;
     padding: 26px 39px 20px 39px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
     .btn{
         width: 238px;
