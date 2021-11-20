@@ -266,6 +266,10 @@ a {
   margin-bottom: 60px;
 }
 
+.our-services__item .text__p-full {
+  display: none;
+}
+
 .our-services__item .text__link {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -297,6 +301,14 @@ a {
   color: #343434;
   -webkit-transition: 1.5s;
   transition: 1.5s;
+}
+
+.our-services__item:hover .text__p {
+  display: none;
+}
+
+.our-services__item:hover .text__p-full {
+  display: block;
 }
 
 .our-services__item:hover .text__link {
