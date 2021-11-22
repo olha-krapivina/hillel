@@ -28,6 +28,10 @@ button {
   padding: 22px 0 0 0;
 }
 
+.container {
+  background: cadetblue;
+}
+
 .header__button {
   font-size: 38px;
   line-height: 34px;
@@ -228,5 +232,25 @@ textarea {
   width: 70px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.line {
+  width: 57px;
+  height: 3px;
+  background-color: #ff5c36;
+}
+
+.modern__section .btn {
+  width: 228px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 14px 46px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 46px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+.modern__img {
+  background: url(../img/apple-watch-mockup.png) no-repeat center;
+  background-size: 100%;
 }
 /*# sourceMappingURL=style.css.map */
