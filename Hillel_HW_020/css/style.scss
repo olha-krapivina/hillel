@@ -32,7 +32,7 @@ button{
 // header start
 
 .container{
-    background: cadetblue;
+    // background: cadetblue;
 }
 
 .header__button{
@@ -66,7 +66,7 @@ button{
         font-size: 50px;
         line-height: 62px;
         font-weight: 600;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         span{
             color: $h-color;
         }
@@ -209,4 +209,103 @@ textarea{
 .modern__img{
     background: url(../img/apple-watch-mockup.png) no-repeat center;
     background-size: 100%;
+    @media screen and (max-width: 767px) {
+                width: 285px;
+                height: 330px;
+            }
+}
+
+// team section
+
+.card-team{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 445px;
+    box-shadow: 0 14px 46px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.22);
+    .card-team__block-first{
+        position: absolute;
+        display: inline-block;
+        width: 262px;
+        top: 365px;
+        left: calc(50% - 130px);
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 0 14px 46px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.22);
+        padding: 21px 46px 0 46px;
+        h2{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .card-team__block-second{
+        display: flex;
+        flex-flow: column wrap;
+        align-self: flex-end;
+        p{
+            font-size: 11px;
+            margin-bottom: 5px;
+            &:last-of-type{
+                font-size: 16px;
+                color: #ff5c36;
+                margin-bottom: 10px;
+            }
+        }
+        .line-white{
+            width: 150px;
+            height: 4px;
+            background: #817f7e;
+            border-radius: 1px;
+            margin-bottom: 10px;
+            .line-orange{
+                height: 100%;
+                border-radius: 2px;
+                background: #ff5c36;
+            }
+            .line-orange_first{
+                width: 123px;
+            }
+            .line-orange_second{
+                width: 109px;
+            }
+            .line-orange_third{
+                width: 117px;
+            }
+        }
+
+        h2{
+            font-size: 30px;
+            margin: 80px 0 0 0;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                &:not(:last-child){
+                    margin-right: 15px;
+                }
+                a{
+                    display: inline-block;
+                    width: 16px;
+                    height: 18px;
+                }
+                .icon-link_first{
+                    background: url(../img/icon-twitter_01.png) no-repeat center;
+                }
+                .icon-link_second{
+                    background: url(../img/icon-facebook_01.png) no-repeat center;
+                }
+            }
+        }
+    }
+}
+
+.card-team__first{
+    background: #ff5c36;
+}
+.card-team__second{
+    background: #fff3f0;
 }

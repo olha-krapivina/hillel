@@ -28,10 +28,6 @@ button {
   padding: 22px 0 0 0;
 }
 
-.container {
-  background: cadetblue;
-}
-
 .header__button {
   font-size: 38px;
   line-height: 34px;
@@ -71,7 +67,6 @@ button {
   font-size: 50px;
   line-height: 62px;
   font-weight: 600;
-  margin-bottom: 30px;
 }
 
 .header__section-title h1 span {
@@ -252,5 +247,136 @@ textarea {
 .modern__img {
   background: url(../img/apple-watch-mockup.png) no-repeat center;
   background-size: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .modern__img {
+    width: 285px;
+    height: 330px;
+  }
+}
+
+.card-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 445px;
+  -webkit-box-shadow: 0 14px 46px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 46px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+.card-team .card-team__block-first {
+  position: absolute;
+  display: inline-block;
+  width: 262px;
+  top: 365px;
+  left: calc(50% - 130px);
+  background: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 14px 46px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 46px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.22);
+  padding: 21px 46px 0 46px;
+}
+
+.card-team .card-team__block-first h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card-team .card-team__block-first p {
+  font-size: 15px;
+}
+
+.card-team .card-team__block-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card-team .card-team__block-second p {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.card-team .card-team__block-second p:last-of-type {
+  font-size: 16px;
+  color: #ff5c36;
+  margin-bottom: 10px;
+}
+
+.card-team .card-team__block-second .line-white {
+  width: 150px;
+  height: 4px;
+  background: #817f7e;
+  border-radius: 1px;
+  margin-bottom: 10px;
+}
+
+.card-team .card-team__block-second .line-white .line-orange {
+  height: 100%;
+  border-radius: 2px;
+  background: #ff5c36;
+}
+
+.card-team .card-team__block-second .line-white .line-orange_first {
+  width: 123px;
+}
+
+.card-team .card-team__block-second .line-white .line-orange_second {
+  width: 109px;
+}
+
+.card-team .card-team__block-second .line-white .line-orange_third {
+  width: 117px;
+}
+
+.card-team .card-team__block-second h2 {
+  font-size: 30px;
+  margin: 80px 0 0 0;
+}
+
+.card-team .card-team__block-second ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-team .card-team__block-second ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.card-team .card-team__block-second ul li a {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+}
+
+.card-team .card-team__block-second ul li .icon-link_first {
+  background: url(../img/icon-twitter_01.png) no-repeat center;
+}
+
+.card-team .card-team__block-second ul li .icon-link_second {
+  background: url(../img/icon-facebook_01.png) no-repeat center;
+}
+
+.card-team__first {
+  background: #ff5c36;
+}
+
+.card-team__second {
+  background: #fff3f0;
 }
 /*# sourceMappingURL=style.css.map */
