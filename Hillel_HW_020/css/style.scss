@@ -29,16 +29,27 @@ button{
     }
 }
 
-// header start
-
-.container{
-    // background: cadetblue;
+.footer{
+    min-width: 100%;
+    background-color: #f7f7f7;
 }
+
+.row{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    &:not(:first-child){
+        padding-bottom: 140px;
+    }
+}
+
+// header start
 
 .header__button{
     font-size: 38px;
     line-height: 34px;
-    font-weight: 600;
+    font-weight: 500;
     border: 3px solid #706b73;
     border-radius: 2px;
     padding: 8px 17px;
@@ -62,10 +73,11 @@ button{
 .header__section-title{
     width: 100%;
     margin-bottom: 110px;
-    h1{
+    padding-top: 140px;
+    h2{
         font-size: 50px;
         line-height: 62px;
-        font-weight: 600;
+        font-weight: 500;
         // margin-bottom: 30px;
         span{
             color: $h-color;
@@ -166,7 +178,7 @@ textarea{
 }
 
 .orange-card{
-    height: 358px;
+    height: 345px;
     background-color: #ff5c36;
 }
 
@@ -398,4 +410,63 @@ textarea{
             }
         }
     }
+}
+
+// footer
+.pre-footer__link{
+    display: inline-block;
+    height: 30px;
+    img{
+        height: 100%;
+        opacity: 0.3;
+    }
+}
+.pre-footer_p{
+    padding: 70px 0;
+}
+.footer-p{
+    padding: 40px 0;
+}
+footer{
+    .btn{
+        width: 228px;
+        height: 56px;
+        background-color: #fff;
+        border-radius: 50px;
+        box-shadow: 0 14px 46px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.22);
+        margin-bottom: 50px;
+    }
+}
+.footer__item:not(:last-child){
+    margin-right: 17px;
+}
+.footer__link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    &:hover{
+        background-color: #ff6e47;
+    }
+}
+.footer__link__facebook{
+    background: url(../img/footer-link_facebook.png) no-repeat center;
+    background-color: #d3d3d3;
+}
+.footer__link__twitter{
+    background: url(../img/footer-link_twitter.png) no-repeat center;
+    background-color: #d3d3d3;
+}
+.footer__link__ball{
+    background: url(../img/footer-link_ball.png) no-repeat center;
+    background-color: #d3d3d3;
+}
+.footer__link__be{
+    background: url(../img/footer-link_be.png) no-repeat center;
+    background-color: #d3d3d3;
+}
+
+.footer_c{
+    font-size: 17px;
+    opacity: 0.7;
 }
