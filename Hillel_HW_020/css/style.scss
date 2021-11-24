@@ -309,3 +309,93 @@ textarea{
 .card-team__second{
     background: #fff3f0;
 }
+
+// slider section
+
+.carousel-inner{
+    padding: 50px 40px;
+}
+.slide__content{
+    position: relative;
+    padding: 90px 50px 40px 50px;
+    .circle{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        left: calc(50% - 60px);
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid rgb(209, 209, 209);
+    }
+}
+
+.slide__content__shadow{
+    box-shadow: 0 14px 46px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.22);
+}
+.slide__content__border{
+    border: 1px solid #d3d3d3;
+}
+
+#carouselExampleIndicators{
+    .carousel-indicators{
+        button{
+            width: 18px;
+            height: 6px;
+            border-radius: 2px;
+            background-color: #e0e0e0;
+            &:not(:last-child){
+                margin-right: 8px;
+            }
+        }
+        .active{
+            background-color: #ff6e47;
+        }
+    }
+}
+
+.carousel-control-prev{
+    display: flex;
+    justify-content: flex-start;
+    background: none;
+    .b-prev{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #ff6e47;
+        box-shadow: 0px 0px 10px 0px rgba(221, 221, 221, 1);
+        .carousel-control-prev-icon{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: url(../img/arrow-left-white.png) center no-repeat;
+            &:hover{
+                background: url(../img/arrow-left-black.png) center no-repeat;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.carousel-control-next{
+    display: flex;
+    justify-content: flex-end;
+    background: none;
+    .b-next{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #ff6e47;
+        box-shadow: 0px 0px 10px 0px rgba(221, 221, 221, 1);
+        .carousel-control-next-icon{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: url(../img/arrow-right-white.png) center no-repeat;
+            &:hover{
+                background: url(../img/arrow-right-black.png) center no-repeat;
+                background-color: #fff;
+            }
+        }
+    }
+}
