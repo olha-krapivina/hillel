@@ -1,0 +1,52 @@
+@import "fonts";
+
+// reset
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Norms', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+a{
+    font-family: 'TT Norms', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+
+//
+
+._wrapper{
+    min-width: 100%;
+}
+._container{
+    max-width: 1440px;
+    margin: 0 auto;
+    // box-sizing: content-box;
+}
+._container__content{
+    max-width: 1320px;
+    margin: 0 auto;
+    // box-sizing: content-box;
+}
+
+// 
