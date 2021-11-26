@@ -191,7 +191,7 @@ img {
 
 .header {
   background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
-  padding: 195px 0 0 0;
+  padding: 135px 0 0 0;
 }
 
 .header__nav {
@@ -263,12 +263,34 @@ img {
   color: #F0145A;
 }
 
-.header__bg-frame-p {
+.header__bg-frame__small-p {
+  height: 645px;
   background: url(../img/header/FrameP.svg) no-repeat center;
-  background-size: auto 100%;
+  margin: 45px 0 0 0;
 }
 
-.header__bg-frame-p .header__bg-P {
-  background: url(../img/header/symbolP.png) no-repeat center;
+.header__bg-frame__small-p .header__bg-frame__big-p {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(50, 50, 100, 0)), to(#323264)), url(../img/header/symbolP.png) no-repeat bottom;
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 80%, #323264 100%), url(../img/header/symbolP.png) no-repeat bottom;
+  text-align: center;
+  padding: 205px 0 0 0;
+}
+
+.header__bg-frame__small-p .header__bg-frame__big-p p {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #fff;
+}
+
+.header__bg-frame__small-p .header__bg-frame__big-p .btn-scroll {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: url(../img/header/btn-scroll.png) no-repeat center;
+  margin: 290px 0 0 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
