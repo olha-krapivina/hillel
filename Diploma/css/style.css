@@ -22,6 +22,111 @@
   font-style: normal;
 }
 
+.fx-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* flex-direction */
+.fx-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fx-column-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.fx-column-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+/* justify-content */
+.fx-jc-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fx-jc-sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fx-jc-sa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fx-jc-fe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* align-items */
+.fl-ai-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fl-ai-s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.fl-as-c {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.fl-as-b {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
 *, html, body {
   margin: 0;
   padding: 0;
@@ -71,5 +176,91 @@ img {
 ._container__content {
   max-width: 1320px;
   margin: 0 auto;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background-color: #E6E6F0;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 10px;
+}
+
+.header {
+  background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
+
+.header__nav {
+  background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+  padding: 20px 60px;
+  margin: 30px 0 0 0;
+}
+
+.header__nav .header__logo {
+  width: 155px;
+}
+
+.header__nav .header__logo img {
+  width: 100%;
+}
+
+.header__nav .header__content .header__contacts {
+  margin: 0 0 16px 0;
+}
+
+.header__nav .header__content .header__contacts a,
+.header__nav .header__content .header__contacts span,
+.header__nav .header__content .header__contacts p {
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__nav .header__content .header__contacts span {
+  font-size: 12px;
+}
+
+.header__nav .header__content .header__contacts p, .header__nav .header__content .header__contacts a {
+  font-size: 16px;
+}
+
+.header__nav .header__content .header__contacts p {
+  font-weight: 400;
+}
+
+.header__nav .header__content .header__contacts .change-lg a {
+  border-radius: 8px;
+  padding: 2px 6px 5px 6px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header__nav .header__content .header__contacts .change-lg a:first-child, .header__nav .header__content .header__contacts .change-lg a:hover {
+  background-color: #F0145A;
+}
+
+.header__nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header__menu-item:not(:last-child) {
+  margin: 0 15px 0 0;
+}
+
+.header__menu-item .header__menu-link {
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header__menu-item .header__menu-link:hover {
+  color: #F0145A;
 }
 /*# sourceMappingURL=style.css.map */

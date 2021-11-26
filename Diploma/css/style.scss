@@ -1,4 +1,6 @@
 @import "fonts";
+@import "flex";
+@import "variables";
 
 // reset
 
@@ -49,4 +51,98 @@ img{
     // box-sizing: content-box;
 }
 
+.dot{
+    width: 7px;
+    height: 7px;
+    background-color: #E6E6F0;
+    border-radius: 50%;
+    align-self: center;
+    margin: 0 10px;
+}
+
 // 
+
+// header start
+
+.header{
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    // height: 1000px;
+    // width: 100%;
+}
+.header__nav{
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    padding: 20px 60px;
+    margin: 30px 0 0 0;
+
+    .header__logo{
+        width: 155px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .header__content{
+        .header__contacts{
+            margin: 0 0 16px 0;
+            a,
+            span,
+            p{
+                color: #fff;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            span{
+                font-size: 12px;
+            }
+            p,a{
+                font-size: 16px;
+            }
+            p{
+                font-weight: 400;
+            }
+
+            .change-lg{
+                a{
+                    border-radius: 8px;
+                    padding: 2px 6px 5px 6px;
+                    transition: 1s;
+                    &:first-child,
+                    &:hover{
+                        background-color: $color__pink;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.header__nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header__menu-item{
+    &:not(:last-child){
+        margin: 0 15px 0 0;
+    }
+    .header__menu-link{
+        color: #fff;
+        font-weight: 500;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: 1s;
+        &:hover{
+            color: $color__pink;
+        }
+    }
+}
+
+// .bg-frame_1{
+//     width: 670px;
+//     img{
+//         width: 100%;
+//     }
+// }
+
+// header end
