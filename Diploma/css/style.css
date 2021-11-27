@@ -107,13 +107,13 @@
           align-items: center;
 }
 
-.fl-ai-s {
+.fl-ai-fs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .fl-as-c {
@@ -125,6 +125,11 @@
 .fl-as-b {
   -ms-flex-item-align: baseline;
       align-self: baseline;
+}
+
+.fl-as-fs {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .fl-as-fe {
@@ -174,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-p {
+p, span {
   padding: 0;
   margin: 0;
 }
@@ -208,8 +213,8 @@ p {
   font-size: 42px;
   font-weight: 700;
   line-height: 45px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#EF8080), to(#F0145A));
-  background-image: linear-gradient(90deg, #EF8080, #F0145A);
+  background-image: -webkit-gradient(linear, left top, right top, from(#F0145A), to(#EF8080));
+  background-image: linear-gradient(90deg, #F0145A, #EF8080);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -228,6 +233,7 @@ p {
   background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
   padding: 20px 60px;
   margin: 30px 0 0 0;
+  z-index: 99;
 }
 
 .header__nav .header__logo {
@@ -319,9 +325,9 @@ p {
   cursor: pointer;
 }
 
-.main {
+.main__bg {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-  padding: 80px 0 0 0;
+  padding: 80px 0;
 }
 
 .main__navtabs-box {
@@ -385,8 +391,9 @@ p {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 17px;
+  letter-spacing: 2px;
   color: #fff;
   opacity: 0.5;
   padding: 0 15px 0 0;
@@ -394,8 +401,8 @@ p {
 
 .main__service-box > p::after {
   position: absolute;
-  content: url(../img/main/link-arrow.png);
-  top: 2px;
+  content: url(../img/main/svg/link-arrow-white.svg);
+  top: 1px;
   right: 0;
 }
 
@@ -405,8 +412,8 @@ p {
   -ms-grid-rows: minmax(0px, auto);
       grid-template-rows: minmax(0px, auto);
   row-gap: 58px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -webkit-column-gap: 40px;
           column-gap: 40px;
 }
@@ -423,5 +430,81 @@ p {
   font-weight: 400;
   color: #fff;
   line-height: 26px;
+}
+
+.main__slider-box {
+  background: #F5F5FA;
+  border-radius: 12px;
+  margin: 60px 0 0 0;
+}
+
+.main__slider-box .carousel .carousel-indicators {
+  bottom: -47px;
+  margin: 0;
+  padding: 0;
+}
+
+.main__slider-box .carousel .carousel-indicators button {
+  width: 16px;
+  height: 16px;
+  background-color: #24A3FF;
+  border-radius: 50%;
+  opacity: 0.2;
+  margin: 0;
+}
+
+.main__slider-box .carousel .carousel-indicators button:not(:last-child) {
+  margin: 0 14px 0 0;
+}
+
+.main__slider-box .carousel .carousel-indicators .active {
+  opacity: 1;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 40px 0 0;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner img {
+  margin: 0 40px 0 0;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner p:first-child {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #24A3FF;
+  letter-spacing: 2px;
+  padding: 0 15px 0 0;
+  margin: 40px 0 0 0;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner p:first-child::after {
+  position: absolute;
+  content: url(../img/main/svg/link-arrow-blue.svg);
+  top: 1px;
+  right: 0;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner p:not(:first-child) {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #B3B3BA;
+  margin: 20px 0 5px 0;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner p:last-child {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

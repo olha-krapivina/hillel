@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 0;
     margin: 0;
 }
-p{
+p, span{
     padding: 0;
     margin: 0;
 }
@@ -71,7 +71,7 @@ p{
     font-size: 42px;
     font-weight: 700;
     line-height: 45px;
-    background-image: linear-gradient(90deg, #EF8080, #F0145A);
+    background-image: linear-gradient(90deg, $color__pink, $color__light-pink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -93,6 +93,7 @@ p{
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     padding: 20px 60px;
     margin: 30px 0 0 0;
+    z-index: 99;
 
     .header__logo{
         width: 155px;
@@ -183,9 +184,9 @@ p{
 
 // main start
 
-.main{
+.main__bg{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    padding: 80px 0 0 0;
+    padding: 80px 0;
 }
 
 // navtab
@@ -197,7 +198,7 @@ p{
         .nav-link{
             font-size: 42px;
             line-height: 45px;
-            color: #B3B3BA;
+            color: $color__gray;
             text-align: end;
             border-right: 4px solid #E6E6F0;
             border-radius: 0;
@@ -208,10 +209,10 @@ p{
             font-size: 42px;
             line-height: 45px;
             background: none;
-            background-image: linear-gradient(90deg, #EF8080, #F0145A);
+            background-image: linear-gradient(90deg, $color__light-pink, $color__pink);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            border-right: 4px solid #F0145A;
+            border-right: 4px solid $color__pink;
         }
     }
     .tab-content{
@@ -247,15 +248,16 @@ p{
         position: relative;
         display: inline-block;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 17px;
+        letter-spacing: 2px;
         color: #fff;
         opacity: 0.5;
         padding: 0 15px 0 0;
         &::after{
             position: absolute;
-            content: url(../img/main/link-arrow.png);
-            top: 2px;
+            content: url(../img/main/svg/link-arrow-white.svg);
+            top: 1px;
             right: 0;
         }
     }
@@ -265,12 +267,12 @@ p{
     display: grid;
     grid-template-rows: minmax(0px, auto);
     row-gap: 58px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 40px;
     .service-content__item{
         h5{
             font-size: 24px;
-            color: #24A3FF;
+            color: $color__blue;
             line-height: 28px;
             margin: 20px 0 15px 0;
         }
@@ -279,6 +281,75 @@ p{
             font-weight: 400;
             color: #fff;
             line-height: 26px;
+        }
+    }
+}
+
+// slider
+
+.main__slider-box{
+    background: #F5F5FA;
+    border-radius: 12px;
+    margin: 60px 0 0 0;
+    .carousel{
+        .carousel-indicators{
+            bottom: -47px;
+            margin: 0;
+            padding: 0;
+            button{
+                width: 16px;
+                height: 16px;
+                background-color: #24A3FF;
+                border-radius: 50%;
+                opacity: 0.2;
+                margin: 0;
+                &:not(:last-child){
+                    margin: 0 14px 0 0;
+                }
+            }
+            .active{
+                opacity: 1;
+            }
+        }
+
+        .carousel-inner{
+            .slide__inner{
+                display: flex;
+                align-items: flex-start;
+                padding: 0 40px 0 0;
+                img{
+                    margin: 0 40px 0 0;
+                }
+                p:first-child{
+                    position: relative;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    color: $color__blue;
+                    letter-spacing: 2px;
+                    padding: 0 15px 0 0;
+                    margin: 40px 0 0 0;
+                    &::after{
+                        position: absolute;
+                        content: url(../img/main/svg/link-arrow-blue.svg);
+                        top: 1px;
+                        right: 0;
+                    }
+                }
+                p:not(:first-child){
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21px;
+                    color: $color__gray;
+                    margin: 20px 0 5px 0;
+                }
+                p:last-child{
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            }
         }
     }
 }

@@ -43,9 +43,9 @@
     display: flex;
     align-items: center;
 }
-.fl-ai-s{
+.fl-ai-fs{
     display: flex;
-    align-items: stretch;
+    align-items: flex-start;
 }
 
 // align-self
@@ -55,6 +55,9 @@
 }
 .fl-as-b{
     align-self: baseline;
+}
+.fl-as-fs{
+    align-self: flex-start;
 }
 .fl-as-fe{
     align-self: flex-end;
