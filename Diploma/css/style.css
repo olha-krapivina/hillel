@@ -227,7 +227,6 @@ img {
 .header__nav .header__content .header__contacts p {
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 0;
 }
 
 .header__nav .header__content .header__contacts span {
@@ -245,7 +244,7 @@ img {
 
 .header__nav .header__content .header__contacts .change-lg a {
   border-radius: 8px;
-  padding: 1px 6px 3px 7px;
+  padding: 2px 6px 4px 7px;
   -webkit-transition: 1s;
   transition: 1s;
 }
