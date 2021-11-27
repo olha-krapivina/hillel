@@ -84,7 +84,7 @@ p, span{
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     padding: 135px 0 0 0;
 }
-.header__nav{
+.header__nav-desktop{
     position: fixed;
     width: 100%;
     max-height: 105px;
@@ -94,6 +94,10 @@ p, span{
     padding: 20px 60px;
     margin: 30px 0 0 0;
     z-index: 99;
+
+    @media screen and (max-width: 920px){
+        display: none;
+    }
 
     .header__logo{
         width: 155px;
@@ -114,7 +118,7 @@ p, span{
             }
             span{
                 font-size: 12px;
-                letter-spacing: 1px
+                letter-spacing: 1px;
             }
             p,a{
                 font-size: 16px;
@@ -126,7 +130,7 @@ p, span{
             .change-lg{
                 a{
                     border-radius: 8px;
-                    padding: 2px 6px 4px 7px;
+                    padding: 1px 6px 4px 7px;
                     transition: 1s;
                     &:first-child,
                     &:hover{
@@ -136,6 +140,58 @@ p, span{
                 }
             }
         }
+    }
+}
+
+.header__nav-mobile{
+    display: none;
+    position: fixed;
+    width: 100%;
+    max-height: 105px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
+    z-index: 99;
+
+    @media screen and (max-width: 920px){
+        display: block;
+    }
+
+    .header__content{
+        margin: 0 0 20px 0;
+        & > a{
+            font-size: 16px;
+            line-height: 19px;
+            color: $color__gray;
+        }
+        .change-lg{
+            a{
+                border-radius: 8px;
+                padding: 1px 6px 4px 7px;
+                transition: 1s;
+                &:first-child,
+                &:hover{
+                    background-color: $color__pink;
+                }
+                span{
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    color: $color__gray;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    &:first-child{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .burger{
+        width: 18px;
+        height: 32px;
+        background: url(../img/header/hamburger-modile.svg) no-repeat center;
     }
 }
 
