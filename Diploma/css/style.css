@@ -303,4 +303,53 @@ img {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   padding: 80px 0 0 0;
 }
+
+.navtabs-box {
+  max-width: 1065px;
+  margin: 0 auto;
+}
+
+.navtabs-box .nav-pills .nav-link {
+  font-size: 42px;
+  line-height: 45px;
+  color: #B3B3BA;
+  text-align: end;
+  border-right: 4px solid #E6E6F0;
+  border-radius: 0;
+  padding: 10px 40px 10px 0;
+  margin: 0;
+}
+
+.navtabs-box .nav-pills .active {
+  font-size: 42px;
+  line-height: 50px;
+  background: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#EF8080), to(#F0145A));
+  background-image: linear-gradient(90deg, #EF8080, #F0145A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-right: 4px solid #F0145A;
+}
+
+.navtabs-box .tab-content {
+  margin: 0 0 0 40px;
+}
+
+.navtabs-box .tab-content .tab-pane p {
+  color: #fff;
+}
+
+.navtabs-box .tab-content .tab-pane p:first-child {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  margin: 0 0 20px 0;
+}
+
+.navtabs-box .tab-content .tab-pane p:last-child {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
