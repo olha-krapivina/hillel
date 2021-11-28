@@ -377,6 +377,13 @@ p, span {
   margin: 40px 0 0 0;
 }
 
+@media screen and (max-width: 680px) {
+  .header__bg-frame__small-p {
+    height: 530px;
+    background: none;
+  }
+}
+
 .header__bg-frame__small-p .header__bg-frame__big-p {
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(50, 50, 100, 0)), to(#323264)), url(../img/header/symbolP.png) no-repeat bottom;
@@ -397,8 +404,15 @@ p, span {
   height: 42px;
   border: 1px solid #fff;
   border-radius: 50%;
+  opacity: 0.5;
   background: url(../img/header/btn-scroll.png) no-repeat center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  .header__bg-frame__small-p .header__bg-frame__big-p {
+    padding: 70px 20px 20px 20px;
+  }
 }
 
 .main__bg {

@@ -225,6 +225,11 @@ p, span{
     height: 644px;
     background: url(../img/header/FrameP.svg) no-repeat center;
     margin: 40px 0 0 0;
+
+    @media screen and (max-width: 680px) {
+        height: 530px;
+        background: none;
+    }
     .header__bg-frame__big-p{
         height: 100%;
         background: linear-gradient(180deg, rgba(50, 50, 100, 0) 80%, #323264 100%), url(../img/header/symbolP.png) no-repeat bottom;
@@ -241,8 +246,13 @@ p, span{
             height: 42px;
             border: 1px solid #fff;
             border-radius: 50%;
+            opacity: 0.5;
             background: url(../img/header/btn-scroll.png) no-repeat center;
             cursor: pointer;
+        }
+
+        @media screen and (max-width: 680px) {
+            padding: 70px 20px 20px 20px;
         }
     }
 }
