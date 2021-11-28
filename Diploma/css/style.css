@@ -215,6 +215,7 @@ p, span {
 ._container__content {
   max-width: 1320px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .dot {
@@ -427,18 +428,18 @@ p, span {
 
 .main__bg {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-  padding: 80px 20px;
+  padding: 80px 0px;
 }
 
 @media screen and (max-width: 920px) {
   .main__bg {
-    padding: 60px 20px;
+    padding: 60px 0px;
   }
 }
 
 @media screen and (max-width: 680px) {
   .main__bg {
-    padding: 45px 20px;
+    padding: 45px 0px;
   }
 }
 
@@ -737,10 +738,15 @@ p, span {
 }
 
 .main__slider-box {
-  display: none;
   background: #F5F5FA;
   border-radius: 12px;
   margin: 60px 0 0 0;
+}
+
+@media screen and (max-width: 1010px) {
+  .main__slider-box {
+    margin: 40px 0 0 0;
+  }
 }
 
 .main__slider-box .carousel .carousel-indicators {
@@ -776,11 +782,86 @@ p, span {
   padding: 0 40px 0 0;
 }
 
-.main__slider-box .carousel .carousel-inner .slide__inner img {
+@media screen and (max-width: 1010px) {
+  .main__slider-box .carousel .carousel-inner .slide__inner {
+    padding: 0 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .main__slider-box .carousel .carousel-inner .slide__inner {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner .slide__img {
   margin: 0 40px 0 0;
 }
 
-.main__slider-box .carousel .carousel-inner .slide__inner p:first-child {
+.main__slider-box .carousel .carousel-inner .slide__inner .slide__img img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1010px) {
+  .main__slider-box .carousel .carousel-inner .slide__inner .slide__img {
+    height: 350px;
+    margin: 0 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .main__slider-box .carousel .carousel-inner .slide__inner .slide__img {
+    display: none;
+  }
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner .slide__img-min {
+  display: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 790px) {
+  .main__slider-box .carousel .carousel-inner .slide__inner .slide__img-min {
+    display: block;
+  }
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner .slide__img-min__01 {
+  background: url(../img/main/svg/people_01.svg) no-repeat center;
+  background-size: 100% auto;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner .slide__img-min__02 {
+  background: url(../img/main/svg/people_02.svg) no-repeat center;
+  background-size: 100% auto;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner .slide__img-min__03 {
+  background: url(../img/main/svg/people_03.svg) no-repeat center;
+  background-size: 100% auto;
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner h5 {
+  margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 1010px) {
+  .main__slider-box .carousel .carousel-inner .slide__inner h5 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .main__slider-box .carousel .carousel-inner .slide__inner h5 {
+    margin: 0 0 10px 0;
+  }
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner span {
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -792,24 +873,31 @@ p, span {
   margin: 40px 0 0 0;
 }
 
-.main__slider-box .carousel .carousel-inner .slide__inner p:first-child::after {
+.main__slider-box .carousel .carousel-inner .slide__inner span::after {
   position: absolute;
   content: url(../img/main/svg/link-arrow-blue.svg);
   top: 1px;
   right: 0;
 }
 
-.main__slider-box .carousel .carousel-inner .slide__inner p:not(:first-child) {
+@media screen and (max-width: 790px) {
+  .main__slider-box .carousel .carousel-inner .slide__inner span {
+    margin: 20px 0 0 0;
+  }
+}
+
+.main__slider-box .carousel .carousel-inner .slide__inner .slide__intro p:first-child {
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
   color: #B3B3BA;
-  margin: 20px 0 5px 0;
+  margin: 0 0 5px 0;
 }
 
-.main__slider-box .carousel .carousel-inner .slide__inner p:last-child {
+.main__slider-box .carousel .carousel-inner .slide__inner .slide__intro p:last-child {
   font-size: 16px;
   font-weight: 400;
+  color: #B3B3BA;
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

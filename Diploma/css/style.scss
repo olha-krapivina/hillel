@@ -56,6 +56,7 @@ p, span{
 ._container__content{
     max-width: 1320px;
     margin: 0 auto;
+    padding: 0 20px;
     // box-sizing: content-box;
 }
 
@@ -263,12 +264,12 @@ p, span{
 
 .main__bg{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    padding: 80px 20px;
+    padding: 80px 0px;
     @media screen and (max-width: 920px) {
-        padding: 60px 20px;
+        padding: 60px 0px;
     }
     @media screen and (max-width: 680px) {
-        padding: 45px 20px;
+        padding: 45px 0px;
     }
 }
 
@@ -503,10 +504,13 @@ p, span{
 // slider
 
 .main__slider-box{
-    display: none;
+    // display: none;
     background: #F5F5FA;
     border-radius: 12px;
     margin: 60px 0 0 0;
+    @media screen and (max-width: 1010px) {
+        margin: 40px 0 0 0;
+    }
     .carousel{
         .carousel-indicators{
             bottom: -47px;
@@ -533,10 +537,59 @@ p, span{
                 display: flex;
                 align-items: flex-start;
                 padding: 0 40px 0 0;
-                img{
-                    margin: 0 40px 0 0;
+                @media screen and (max-width: 1010px) {
+                    padding: 0 20px 0 0;
                 }
-                p:first-child{
+                @media screen and (max-width: 790px) {
+                    padding: 0 20px 20px 20px;
+                }
+                .slide__img{
+                    margin: 0 40px 0 0;
+                    img{
+                        height: 100%;
+                    }
+                    @media screen and (max-width: 1010px) {
+                        height: 350px;
+                        margin: 0 20px 0 0;
+                    }
+                    @media screen and (max-width: 790px) {
+                        display: none;
+                    }
+                }
+                .slide__img-min{
+                    display: none;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    margin: 0 10px 0 0;
+                    @media screen and (max-width: 790px) {
+                        display: block;
+                    }
+                }
+                .slide__img-min__01{
+                    background: url(../img/main/svg/people_01.svg) no-repeat center;
+                    background-size: 100% auto;
+                }
+                .slide__img-min__02{
+                    background: url(../img/main/svg/people_02.svg) no-repeat center;
+                    background-size: 100% auto;
+                }
+                .slide__img-min__03{
+                    background: url(../img/main/svg/people_03.svg) no-repeat center;
+                    background-size: 100% auto;
+                }
+
+                h5{
+                    margin: 0 0 20px 0;
+                    @media screen and (max-width: 1010px) {
+                        font-size: 32px;
+                        line-height: 35px;
+                    }
+                    @media screen and (max-width: 790px) {
+                        margin: 0 0 10px 0;
+                    }
+                }
+                span{
                     position: relative;
                     display: inline-block;
                     font-size: 14px;
@@ -552,18 +605,25 @@ p, span{
                         top: 1px;
                         right: 0;
                     }
+                    @media screen and (max-width: 790px) {
+                        margin: 20px 0 0 0;
+                    }
                 }
-                p:not(:first-child){
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 21px;
-                    color: $color__gray;
-                    margin: 20px 0 5px 0;
-                }
-                p:last-child{
-                    font-size: 16px;
-                    font-weight: 400;
-                    margin: 0;
+
+                .slide__intro{
+                    p:first-child{
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 21px;
+                        color: $color__gray;
+                        margin: 0 0 5px 0;
+                    }
+                    p:last-child{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $color__gray;
+                        margin: 0;
+                    }
                 }
             }
         }
