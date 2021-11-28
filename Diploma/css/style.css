@@ -417,12 +417,30 @@ p, span {
 
 .main__bg {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-  padding: 80px 0;
+  padding: 80px 20px;
+}
+
+@media screen and (max-width: 920px) {
+  .main__bg {
+    padding: 60px 20px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .main__bg {
+    padding: 45px 20px;
+  }
 }
 
 .main__navtabs-box {
   max-width: 1065px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 680px) {
+  .main__navtabs-box {
+    display: none;
+  }
 }
 
 .main__navtabs-box .nav-pills .nav-link {
@@ -436,6 +454,14 @@ p, span {
   margin: 0;
 }
 
+@media screen and (max-width: 920px) {
+  .main__navtabs-box .nav-pills .nav-link {
+    font-size: 32px;
+    line-height: 35px;
+    padding: 5px 20px 5px 0;
+  }
+}
+
 .main__navtabs-box .nav-pills .active {
   font-size: 42px;
   line-height: 45px;
@@ -445,6 +471,13 @@ p, span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-right: 4px solid #F0145A;
+}
+
+@media screen and (max-width: 920px) {
+  .main__navtabs-box .nav-pills .active {
+    font-size: 32px;
+    line-height: 35px;
+  }
 }
 
 .main__navtabs-box .tab-content {
@@ -462,11 +495,85 @@ p, span {
   margin: 0 0 20px 0;
 }
 
+@media screen and (max-width: 920px) {
+  .main__navtabs-box .tab-content .tab-pane p:first-child {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 0 10px 0;
+  }
+}
+
 .main__navtabs-box .tab-content .tab-pane p:last-child {
   font-size: 21px;
   font-weight: 400;
   line-height: 30px;
   margin: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .main__navtabs-box .tab-content .tab-pane p:last-child {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 0 5px 0;
+  }
+}
+
+.main__navtabs-box__mobile {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .main__navtabs-box__mobile {
+    display: block;
+  }
+}
+
+.main__navtabs-box__mobile .carousel .carousel-indicators {
+  bottom: -25px;
+  margin: 0;
+  padding: 0;
+}
+
+.main__navtabs-box__mobile .carousel .carousel-indicators button {
+  width: 16px;
+  height: 16px;
+  background-color: #24A3FF;
+  border-radius: 50%;
+  opacity: 0.2;
+  margin: 0;
+}
+
+.main__navtabs-box__mobile .carousel .carousel-indicators button:not(:last-child) {
+  margin: 0 14px 0 0;
+}
+
+.main__navtabs-box__mobile .carousel .carousel-indicators .active {
+  opacity: 1;
+}
+
+.main__navtabs-box__mobile .carousel .carousel-item .slide__inner p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+
+.main__navtabs-box__mobile .carousel .carousel-item .slide__inner p:first-child {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#EF8080), to(#F0145A));
+  background-image: linear-gradient(90deg, #EF8080, #F0145A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.main__navtabs-box__mobile .carousel .carousel-item .slide__inner p:last-child {
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .main__service-box {

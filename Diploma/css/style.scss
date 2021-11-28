@@ -263,7 +263,13 @@ p, span{
 
 .main__bg{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-    padding: 80px 0;
+    padding: 80px 20px;
+    @media screen and (max-width: 920px) {
+        padding: 60px 20px;
+    }
+    @media screen and (max-width: 680px) {
+        padding: 45px 20px;
+    }
 }
 
 // navtab
@@ -271,6 +277,9 @@ p, span{
 .main__navtabs-box{
     max-width: 1065px;
     margin: 0 auto;
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
     .nav-pills{
         .nav-link{
             font-size: 42px;
@@ -281,6 +290,11 @@ p, span{
             border-radius: 0;
             padding: 10px 40px 10px 0;
             margin: 0;
+            @media screen and (max-width: 920px){
+                font-size: 32px;
+                line-height: 35px;
+                padding: 5px 20px 5px 0;
+            }
         }
         .active{
             font-size: 42px;
@@ -290,6 +304,10 @@ p, span{
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             border-right: 4px solid $color__pink;
+            @media screen and (max-width: 920px){
+                font-size: 32px;
+                line-height: 35px;
+            }
         }
     }
     .tab-content{
@@ -302,12 +320,76 @@ p, span{
                     font-weight: 500;
                     line-height: 38px;
                     margin: 0 0 20px 0;
+                    @media screen and (max-width: 920px){
+                        font-size: 20px;
+                        line-height: 25px;
+                        margin: 0 0 10px 0;
+                    }
                 }
                 &:last-child{
                     font-size: 21px;
                     font-weight: 400;
                     line-height: 30px;
                     margin: 0;
+                    @media screen and (max-width: 920px){
+                        font-size: 14px;
+                        line-height: 25px;
+                        margin: 0 0 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main__navtabs-box__mobile{
+    display: none;
+    @media screen and (max-width: 680px) {
+        display: block;
+    }
+    .carousel{
+        .carousel-indicators{
+            bottom: -25px;
+            margin: 0;
+            padding: 0;
+            button{
+                width: 16px;
+                height: 16px;
+                background-color: #24A3FF;
+                border-radius: 50%;
+                opacity: 0.2;
+                margin: 0;
+                &:not(:last-child){
+                    margin: 0 14px 0 0;
+                }
+            }
+            .active{
+                opacity: 1;
+            }
+        }
+
+        .carousel-item{
+            .slide__inner{
+                p{
+                    font-size: 22px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: #fff;
+                    margin: 10px 0 15px 0;
+                    &:first-child{
+                        font-size: 14px;
+                        line-height: 17px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        background-image: linear-gradient(90deg, $color__light-pink, $color__pink);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin: 0;
+                    }
+                    &:last-child{
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
                 }
             }
         }
