@@ -525,7 +525,7 @@ p, span{
     }
 }
 
-// slider
+// sliders
 
 .main__slider-box{
     background: $color__gray-bg;
@@ -686,7 +686,6 @@ p, span{
         .case__title{
             font-size: 14px;
             font-weight: 700;
-            letter-spacing: 1px;
             line-height: 17px;
             color: $color__pink;
             margin: 0;
@@ -764,4 +763,127 @@ p, span{
     }
 }
 
+// banners
+
+.main__banner-box{
+    margin: 30px 0 0 0;
+    h5{
+        font-size: 14px;
+        font-weight: 700;
+        color: #323264;
+        margin: 0 0 30px 0;
+    }
+
+    .banners-box{
+        display: grid;
+        width: 100%;
+        grid-auto-rows: minmax(120px, auto);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @media screen and (max-width: 920px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media screen and (max-width: 700px) {
+            grid-auto-rows: minmax(90px, auto);
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .banner-item-1{
+            background: url(../img/main/svg/banner-logo_01.svg) no-repeat center;
+            background-color:#1C4280;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_01.svg) no-repeat center;
+                background-color:#1C4280;
+            }
+        }
+        .banner-item-2{
+            background: url(../img/main/svg/banner-logo_02.svg) no-repeat center;
+            background-color:#143646;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_02.svg) no-repeat center;
+                background-color:#143646;
+            }
+        }
+        .banner-item-3{
+            background: url(../img/main/svg/banner-logo_03.svg) no-repeat center;
+            background-color:#F48B30;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_03.svg) no-repeat center;
+                background-color:#F48B30;
+            }
+        }
+        .banner-item-4{
+            background: url(../img/main/svg/banner-logo_04.svg) no-repeat center;
+            background-color:#9E4DC3;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_04.svg) no-repeat center;
+                background-color:#9E4DC3;
+            }
+        }
+        .banner-item-5{
+            background: url(../img/main/svg/banner-logo_05.svg) no-repeat center;
+            background-color:#FD9339;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_05.svg) no-repeat center;
+                background-color:#DCF3F9;
+            }
+        }
+        .banner-item-6{
+            background: url(../img/main/svg/banner-logo_06.svg) no-repeat center;
+            background-color:#E2E2E4;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_06.svg) no-repeat center;
+                background-color:#C71C36;
+            }
+        }
+        .banner-item-7{
+            background: url(../img/main/svg/banner-logo_07.svg) no-repeat center;
+            background-color:#C71C36;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_07.svg) no-repeat center;
+                background-color:#FD9339;
+            }
+        }
+        .banner-item-8{
+            background: url(../img/main/svg/banner-logo_08.svg) no-repeat center;
+            background-color:#DCF3F9;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_08.svg) no-repeat center;
+                background-color:#EAEAEA;
+            }
+        }
+        .banner-item-9{
+            background: url(../img/main/svg/banner-logo_09.svg) no-repeat center;
+            background-color:#EAEAEA;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_09.svg) no-repeat center;
+                background-color:#000000;
+            }
+        }
+        .banner-item-10{
+            background: url(../img/main/svg/banner-logo_010.svg) no-repeat center;
+            background-color:#282240;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_010.svg) no-repeat center;
+                background-color:#1D4568;
+            }
+        }
+        .banner-item-11{
+            background: url(../img/main/svg/banner-logo_011.svg) no-repeat center;
+            background-color:#1D4568;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_011.svg) no-repeat center;
+                background-color:#282240;
+            }
+        }
+        .banner-item-12{
+            background: url(../img/main/svg/banner-logo_012.svg) no-repeat center;
+            background-color:#000000;
+            @media screen and (max-width: 530px) {
+                background: url(../img/main/svg/banner-logo-mobile_012.svg) no-repeat center;
+                background-color:#E2E2E4;
+            }
+        }
+    }
+}
 // main end
