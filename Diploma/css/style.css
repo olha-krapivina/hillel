@@ -940,4 +940,199 @@ p, span {
   color: #B3B3BA;
   margin: 0;
 }
+
+.main__case-box {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: minmax(57px, auto);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px;
+  margin: 77px 0 0 0;
+}
+
+@media screen and (max-width: 920px) {
+  .main__case-box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 61px 0 0 0;
+  }
+}
+
+.main__case-box .case__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: #F5F5FA;
+  padding: 20px;
+}
+
+.main__case-box .case__item p {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #686887;
+  margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 680px) {
+  .main__case-box .case__item p {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.main__case-box .case__item .case__title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 17px;
+  color: #F0145A;
+  margin: 0;
+}
+
+.main__case-box .case__item span {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+
+.main__case-box .case__item-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  border-radius: 12px 0px 0px 0px;
+}
+
+@media screen and (max-width: 920px) {
+  .main__case-box .case__item-1 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+
+.main__case-box .case__item-2 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+@media screen and (max-width: 920px) {
+  .main__case-box .case__item-2 {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+}
+
+.main__case-box .case__item-3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+}
+
+@media screen and (max-width: 920px) {
+  .main__case-box .case__item-3 {
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+}
+
+.main__case-box .case__item-4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9/13;
+  border-radius: 0px 12px 0px 0px;
+}
+
+@media screen and (max-width: 920px) {
+  .main__case-box .case__item-4 {
+    -ms-grid-row: 4;
+    grid-row: 4/4;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    border-radius: 0;
+  }
+}
+
+.main__case-box .case__item-5 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  border-radius: 0px 0px 0px 12px;
+}
+
+@media screen and (max-width: 920px) {
+  .main__case-box .case__item-5 {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    border-radius: 0;
+  }
+}
+
+.main__case-box .case__item-6 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4/8;
+}
+
+@media screen and (max-width: 920px) {
+  .main__case-box .case__item-6 {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+}
+
+.main__case-box .case__item-7 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8/13;
+  border-radius: 0px 0px 12px 0px;
+}
+
+@media screen and (max-width: 920px) {
+  .main__case-box .case__item-7 {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    border-radius: 0px 0px 12px 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
