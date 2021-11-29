@@ -1,5 +1,13 @@
 @font-face {
   font-family: 'TT Norms';
+  src: url(../fonts/TTNorms_Light/TTNorms-Light.ttf), url(../fonts/TTNorms_Light/TTNorms-Light.eot), url(../fonts/TTNorms_Light/TTNorms-Light.woff);
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Norms';
   src: url(../fonts/TTNorms_Regular/TTNorms-Regular.ttf), url(../fonts/TTNorms_Regular/TTNorms-Regular.eot), url(../fonts/TTNorms_Regular/TTNorms-Regular.woff);
   font-display: swap;
   font-weight: 400;
@@ -291,7 +299,7 @@ p, span {
 }
 
 .header__nav-desktop .header__content .header__contacts p {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .header__nav-desktop .header__content .header__contacts .change-lg .btn-language {
@@ -516,7 +524,7 @@ p, span {
 
 .main__navtabs-box .tab-content .tab-pane p:last-child {
   font-size: 21px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 30px;
   margin: 0;
 }
@@ -585,6 +593,7 @@ p, span {
 .main__navtabs-box__mobile .carousel .carousel-item .slide__inner p:last-child {
   font-size: 18px;
   line-height: 26px;
+  font-weight: 300;
 }
 
 .main__service-box {
@@ -756,7 +765,7 @@ p, span {
 
 .main__service-content .service-content__item p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
   line-height: 26px;
 }

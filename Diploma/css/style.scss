@@ -125,7 +125,7 @@ p, span{
                 font-size: 16px;
             }
             p{
-                font-weight: 400;
+                font-weight: 300;
             }
 
             .change-lg{
@@ -329,7 +329,7 @@ p, span{
                 }
                 &:last-child{
                     font-size: 21px;
-                    font-weight: 400;
+                    font-weight: 300;
                     line-height: 30px;
                     margin: 0;
                     @media screen and (max-width: 920px){
@@ -390,6 +390,7 @@ p, span{
                     &:last-child{
                         font-size: 18px;
                         line-height: 26px;
+                        font-weight: 300;
                     }
                 }
             }
@@ -513,7 +514,7 @@ p, span{
         }
         p{
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 300;
             color: #fff;
             line-height: 26px;
             @media screen and (max-width: 680px) {

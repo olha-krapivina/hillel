@@ -1,5 +1,14 @@
 @font-face {
     font-family: 'TT Norms';
+    src: url(../fonts/TTNorms_Light/TTNorms-Light.ttf),
+    url(../fonts/TTNorms_Light/TTNorms-Light.eot),
+    url(../fonts/TTNorms_Light/TTNorms-Light.woff);
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Norms';
     src: url(../fonts/TTNorms_Regular/TTNorms-Regular.ttf),
     url(../fonts/TTNorms_Regular/TTNorms-Regular.eot),
     url(../fonts/TTNorms_Regular/TTNorms-Regular.woff);
