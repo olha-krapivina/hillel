@@ -29,11 +29,9 @@
 /* justify-content */
 
 .fx-jc-c{
-    display: flex;
     justify-content: center;
 }
 .fx-jc-sb{
-    display: flex;
     justify-content: space-between;
 }
 .fx-jc-sa{
@@ -41,36 +39,32 @@
     justify-content: space-around;
 }
 .fx-jc-fe{
-    display: flex;
     justify-content: flex-end;
 }
 
 /* align-items */
 
-.fl-ai-c{
-    display: flex;
+.fx-ai-c{
     align-items: center;
 }
-.fl-ai-fs{
-    display: flex;
+.fx-ai-fs{
     align-items: flex-start;
 }
-.fl-ai-fe{
-    display: flex;
+.fx-ai-fe{
     align-items: flex-end;
 }
 
 // align-self
 
-.fl-as-c{
+.fx-as-c{
     align-self: center;
 }
-.fl-as-b{
+.fx-as-b{
     align-self: baseline;
 }
-.fl-as-fs{
+.fx-as-fs{
     align-self: flex-start;
 }
-.fl-as-fe{
+.fx-as-fe{
     align-self: flex-end;
 }

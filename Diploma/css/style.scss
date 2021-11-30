@@ -13,6 +13,9 @@
     font-weight: 700;
     color: #000;
 }
+html, body{
+    height: 100%;
+}
 a{
     font-family: 'TT Norms', sans-serif;
     font-size: 18px;
@@ -47,6 +50,8 @@ p, span{
 
 ._wrapper{
     min-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 ._container-box{
     max-width: 1440px;
@@ -85,6 +90,7 @@ p, span{
     background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     padding: 135px 0 0 0;
 }
+
 .header__nav-desktop{
     position: fixed;
     width: 100%;
@@ -260,9 +266,14 @@ p, span{
 
 // header end
 
+
 // main start
 
-.main__bg{
+.main{
+    flex: 1 1 auto;
+}
+
+._main__bg{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     padding: 80px 0px;
     @media screen and (max-width: 920px) {
@@ -273,41 +284,9 @@ p, span{
     }
 }
 
-.main__bg-gray{
-    position: relative;
-    background: $color__gray-bg;
+._main__bg-gray{
     width: 100%;
-    ._container__content{
-        padding: 0;
-        @media screen and (max-width: 600px) {
-            padding: 0 20px;
-        }
-    }
-    .fume{
-        position: absolute;
-        width: 100%;
-        height: 200px;
-        background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
-        bottom: 0;
-        margin: -200px 0 0 0;
-        @media screen and (max-width: 600px) {
-            display: none;
-        }
-        button{
-            position: absolute;
-            width: 250px;
-            height: 50px;
-            left: calc(50% - 125px);
-            top: 95px;
-            background: $color__blue;
-            font-size: 14px;
-            line-height: 17px;
-            color: #fff;
-            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-            border-radius: 12px;
-            cursor: pointer;
-        }
-    }
+    background: $color__gray-bg;
 }
 
 // navtab
@@ -925,6 +904,41 @@ p, span{
 
 // artiles
 
+._main__container-article{
+    position: relative;
+    ._container__content{
+        padding: 0;
+        @media screen and (max-width: 600px) {
+            padding: 0 20px;
+        }
+    }
+    .fume{
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+        bottom: 0;
+        margin: -200px 0 0 0;
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+        button{
+            position: absolute;
+            width: 250px;
+            height: 50px;
+            left: calc(50% - 125px);
+            top: 95px;
+            background: $color__blue;
+            font-size: 14px;
+            line-height: 17px;
+            color: #fff;
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
 .main__article-box{
     padding: 40px 0 0 0;
     @media screen and (max-width: 600px) {
@@ -1116,3 +1130,12 @@ p, span{
 }
 
 // main end
+
+
+// footer start
+
+.footer{
+    margin: 10px 0 0 0;
+}
+
+// footer end
