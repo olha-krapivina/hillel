@@ -1119,7 +1119,7 @@ p, span{
         .line{
             width: 100%;
             height: 4px;
-            background: $color__gray;
+            background: #E6E6F0;
         }
     }
 
@@ -1135,7 +1135,88 @@ p, span{
 // footer start
 
 .footer{
+    padding: 40px 0;
     margin: 10px 0 0 0;
+    @media screen and (max-width: 600px){
+        padding: 20px 0;
+        margin: 0;
+    }
+    .footer__nav{
+        display: flex;
+        justify-content: space-between;
+
+        .footer__contacts{
+            .footer__contacts-section{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:not(:last-child){
+                    margin: 0 0 20px 0;
+                }
+                .dot{
+                    background: #B3B3BA;
+                }
+                @media screen and (max-width: 800px){
+                    display: flex;
+                    flex-direction: column;
+                    .dot{
+                        display: none;
+                    }
+                }
+            }
+            .footer__contacts-section-1{
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    color: #323264;
+                    @media screen and (max-width: 800px){
+                        margin: 0 0 10px 0;
+                    }
+                }
+                a{
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 1px;
+                    color: $color__blue;
+                }
+                @media screen and (max-width: 800px){
+                    margin: 0 0 20px 0;
+                }
+            }
+            .footer__contacts-section-2{
+                .footer__phone{
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #46466E;
+                    @media screen and (max-width: 800px){
+                        margin: 20px 0;
+                    }
+                }
+                .footer__email{
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $color__blue;
+                }
+            }
+        }
+        .footer__c{
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+                text-align: center;
+                color: $color__gray;
+            }
+            @media screen and (max-width: 600px){
+                margin: 20px 0 0 0;
+            }
+        }
+        @media screen and (max-width: 600px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
 // footer end
