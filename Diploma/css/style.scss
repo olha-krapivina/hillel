@@ -279,6 +279,9 @@ p, span{
     width: 100%;
     ._container__content{
         padding: 0;
+        @media screen and (max-width: 600px) {
+            padding: 0 20px;
+        }
     }
     .fume{
         position: absolute;
@@ -287,6 +290,9 @@ p, span{
         background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
         bottom: 0;
         margin: -200px 0 0 0;
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
         button{
             position: absolute;
             width: 250px;
@@ -488,12 +494,10 @@ p, span{
     .service-content__item{
         .service-item__title{
             display: flex;
-            // flex-flow: column wrap;
             flex-direction: column;
             margin: 0 0 15px 0;
             @media screen and (max-width: 680px) {
                 flex-direction: row;
-                // flex-flow: row wrap;
                 align-items: center;
             }
             .service__img{
@@ -530,9 +534,10 @@ p, span{
                 background-size: 100%;
             }
 
-            h5{
-                display: inline;
+            a{
+                // display: inline;
                 font-size: 24px;
+                font-weight: 500;
                 color: $color__blue;
                 line-height: 28px;
                 margin: 20px 0 0 0;
@@ -922,6 +927,9 @@ p, span{
 
 .main__article-box{
     padding: 40px 0 0 0;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
     h5{
         margin: 0 0 40px 0;
     }
@@ -1009,6 +1017,101 @@ p, span{
         .article-item-3{
             margin: 0 0 40px 0;
         }
+    }
+}
+
+.main__article-box__mobile{
+    display: none;
+    padding: 20px 0 0 0;
+    h5{
+        font-size: 32px;
+        line-height: 38px;
+        margin: 0 0 20px 0;
+    }
+    span:first-child{
+        position: relative;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        color: $color__blue;
+        letter-spacing: 1px;
+        padding: 0 15px 0 0;
+        &::after{
+            position: absolute;
+            content: url(../img/main/svg/link-arrow-blue.svg);
+            top: 1px;
+            right: 0;
+        }
+    }
+    .main__article-content__mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .article-item{
+            min-width: 355px;
+            background: #fff;
+            border-radius: 8px;
+            &:not(:last-child){
+                margin: 0 0 20px 0;
+            }
+            .article__img{
+                width: 100%;
+                height: 188px;
+                border-radius: 8px 8px 0 0;
+            }
+            .acticle__img-2{
+                background: url(../img/main/svg/article_02.svg) no-repeat center;
+                background-size: 100%;
+            }
+            .acticle__img-4{
+                background: url(../img/main/svg/article_04.svg) no-repeat center;
+                background-size: 100%;
+            }
+            .article-item__content{
+                padding: 20px;
+                a{
+                    display: inline-block;
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-weight: 500;
+                    color: $color__blue;
+                    margin: 0 0 10px 0;
+                }
+                span{
+                    display: block;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 2px;
+                    color: $color__gray;
+                }
+            }
+        }
+        .article-item-4{
+            margin: 0 0 40px 0;
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            background: $color__blue;
+            font-size: 14px;
+            line-height: 17px;
+            color: #fff;
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+            border-radius: 12px;
+            margin: 20px 0 40px 0;
+            cursor: pointer;
+        }
+        .line{
+            width: 100%;
+            height: 4px;
+            background: $color__gray;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
     }
 }
 
