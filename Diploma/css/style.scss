@@ -85,9 +85,14 @@ p, span{
 // 
 
 // header start
+._header__bg{
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
+._nav__bg{
+    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
 
 .header{
-    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     padding: 135px 0 0 0;
 }
 
@@ -97,20 +102,12 @@ p, span{
     max-height: 105px;
     top: 0;
     left: 0;
-    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     padding: 20px 60px;
     margin: 30px 0 0 0;
     z-index: 99;
 
     @media screen and (max-width: 920px){
         display: none;
-    }
-
-    .header__logo{
-        width: 155px;
-        img{
-            width: 100%;
-        }
     }
 
     .header__content{
@@ -120,8 +117,6 @@ p, span{
             span,
             p{
                 color: #fff;
-                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                // margin: 0;
             }
             span{
                 font-size: 12px;
@@ -132,6 +127,9 @@ p, span{
             }
             p{
                 font-weight: 300;
+            }
+            ._light{
+                color: $color__gray;
             }
 
             .change-lg{
@@ -154,6 +152,15 @@ p, span{
                         background-color: $color__pink;
                     }
                 }
+                .btn-language__light{
+                    color: $color__gray;
+                    &:first-child,
+                    &:hover,
+                    &:focus,
+                    &:active{
+                        color: #fff;
+                    }
+                }
             }
         }
     }
@@ -166,7 +173,6 @@ p, span{
     max-height: 105px;
     top: 0;
     left: 0;
-    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     padding: 10px 20px;
     margin: 10px 0 0 0;
     z-index: 99;
@@ -220,9 +226,16 @@ p, span{
     .header__menu-link{
         color: #fff;
         font-weight: 500;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         transition: 1s;
         &:hover{
+            color: $color__pink;
+        }
+    }
+    .header__menu-link__light{
+        color: $color__blue;
+        &:hover,
+        &:focus,
+        &:active{
             color: $color__pink;
         }
     }
