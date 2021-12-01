@@ -191,6 +191,8 @@ ul,
 ol,
 li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -265,7 +267,6 @@ p, span {
 .header__nav-desktop {
   position: fixed;
   width: 100%;
-  max-height: 105px;
   top: 0;
   left: 0;
   padding: 20px 60px;
@@ -336,7 +337,6 @@ p, span {
   display: none;
   position: fixed;
   width: 100%;
-  max-height: 105px;
   top: 0;
   left: 0;
   padding: 10px 20px;
@@ -385,6 +385,12 @@ p, span {
   background: url(../img/header/hamburger-modile.svg) no-repeat center;
 }
 
+.header__nav-mobile .burger__black {
+  width: 18px;
+  height: 32px;
+  background: url(../img/header/hamburger-modile__black.png) no-repeat center;
+}
+
 .header__menu-item:not(:last-child) {
   margin: 0 15px 0 0;
 }
@@ -405,6 +411,10 @@ p, span {
 }
 
 .header__menu-item .header__menu-link__light:hover, .header__menu-item .header__menu-link__light:focus, .header__menu-item .header__menu-link__light:active {
+  color: #F0145A;
+}
+
+.header__menu-item .active__link {
   color: #F0145A;
 }
 
@@ -456,6 +466,10 @@ p, span {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+._main__padding-top {
+  padding: 60px 0 0 0;
 }
 
 ._main__bg {
@@ -1629,6 +1643,32 @@ p, span {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.main-about__section-1 .main-about__introduction h2 {
+  margin: 0 0 20px 0;
+}
+
+.main-about__section-1 .main-about__introduction p {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.main-about__section-1 .main-about__introduction p:first-of-type {
+  margin: 0 0 20px 0;
+}
+
+.main-about__section-1 .main-about__advantages p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #323264;
+  margin: 10px 0 0 0;
+}
+
+.main-about__section-1 .main-about__advantages span .clietns::before {
+  content: 'url(../img/main_about/clients.svg)';
 }
 
 .footer {
