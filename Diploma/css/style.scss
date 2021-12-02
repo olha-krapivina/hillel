@@ -104,7 +104,6 @@ p, span{
 .header__nav-desktop{
     position: fixed;
     width: 100%;
-    // max-height: 105px;
     top: 0;
     left: 0;
     padding: 20px 60px;
@@ -175,7 +174,6 @@ p, span{
     display: none;
     position: fixed;
     width: 100%;
-    // max-height: 105px;
     top: 0;
     left: 0;
     padding: 10px 20px;
@@ -192,6 +190,7 @@ p, span{
             font-size: 16px;
             line-height: 19px;
             // color: #fff;
+            align-self: center;
             color: $color__gray;
         }
         .change-lg{
@@ -824,6 +823,7 @@ p, span{
         font-size: 14px;
         font-weight: 700;
         color: #323264;
+        text-align: center;
         margin: 0 0 30px 0;
     }
 
@@ -1177,6 +1177,9 @@ p, span{
 
 .main-about__section-1{
     display: flex;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
     .main-about__introduction{
         padding: 0 40px 0 0;
         @media screen and (max-width: 800px) {
@@ -1235,9 +1238,6 @@ p, span{
             }
         }
     }
-    @media screen and (max-width: 800px) {
-        flex-direction: column;
-    }
 }
 
 .team__img__desktop{
@@ -1264,9 +1264,27 @@ p, span{
 
 .main-about__section-2{
     display: flex;
+    margin: 0 0 90px 0;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        margin: 0 0 40px 0;
+    }
     .section_title{
         min-width: 400px;
         margin: 0 0 0 40px;
+        @media screen and (max-width: 920px) {
+            margin: 0 0 0 20px;
+        }
+        @media screen and (max-width: 800px) {
+            min-width: auto;
+            margin: 20px 0 0 0;
+        }
+        h2{
+            @media screen and (max-width: 920px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
     }
     p{
         font-size: 21px;
@@ -1274,6 +1292,108 @@ p, span{
         line-height: 30px;
         &:not(:last-child){
             margin: 0 0 20px 0;
+        }
+        @media screen and (max-width: 920px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
+
+.main-about__slider{
+    padding: 30px 0 76px 0;
+    h5{
+        font-size: 14px;
+        font-weight: 700;
+        color: #323264;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+
+    .carousel{
+        .carousel-indicators{
+            bottom: -57px;
+            margin: 0;
+            padding: 0;
+            button{
+                width: 16px;
+                height: 16px;
+                background-color: #24A3FF;
+                border-radius: 50%;
+                opacity: 0.2;
+                margin: 0;
+                &:not(:last-child){
+                    margin: 0 14px 0 0;
+                }
+            }
+            .active{
+                opacity: 1;
+            }
+            // button.btn__mobile{
+            //     display: none;
+            //     @media screen and (max-width: 600px) {
+            //         display: block;
+            //     }
+            // }
+        }
+
+        .carousel-inner{
+            .carousel-item__mobile{
+                display: none;
+                @media screen and (max-width: 600px) {
+                    display: block;
+                }
+            }
+            .slide__inner{
+                display: flex;
+                justify-content: space-between;
+                .slide__item{
+                    width: 300px;
+                    height: 109px;
+                    border-radius: 12px;
+                    @media screen and (max-width: 600px) {
+                        width: 157px;
+                        height: 57px;
+                    }
+                }
+                .slide__item-1{
+                    background: url(../img/main_about/achiev_01.svg) no-repeat center;
+                    background-color: #fff;
+                    margin: 0 40px 0 0;
+                    @media screen and (max-width: 600px) {
+                        background: url(../img/main_about/achiev-mobile_01.svg) no-repeat center;
+                        background-color: #fff;
+                    }
+                }
+                .slide__item-2{
+                    background: url(../img/main_about/achiev_02.svg) no-repeat center;
+                    background-color: #fff;
+                    margin: 0 40px 0 0;
+                    @media screen and (max-width: 600px) {
+                        background: url(../img/main_about/achiev-mobile_02.svg) no-repeat center;
+                        background-color: #fff;
+                        margin: 0;
+                    }
+                }
+                .slide__item-3{
+                    background: url(../img/main_about/achiev_03.svg) no-repeat center;
+                    background-color: #fff;
+                    margin: 0 40px 0 0;
+                    @media screen and (max-width: 920px) {
+                        margin: 0;
+                    }
+                    @media screen and (max-width: 600px) {
+                        display: none;
+                    }
+                }
+                .slide__item-4{
+                    background: url(../img/main_about/achiev_04.svg) no-repeat center;
+                    background-color: #fff;
+                    @media screen and (max-width: 920px) {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
