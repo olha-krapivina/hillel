@@ -66,6 +66,11 @@ p, span{
     padding: 0 20px;
     // box-sizing: content-box;
 }
+._container__content_min{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 .dot{
     width: 7px;
@@ -188,6 +193,7 @@ p, span{
         & > a{
             font-size: 16px;
             line-height: 19px;
+            // color: #fff;
             color: $color__gray;
         }
         .change-lg{
@@ -199,6 +205,7 @@ p, span{
                 font-size: 12px;
                 font-weight: 500;
                 letter-spacing: 1px;
+                // color: #fff;
                 color: $color__gray;
                 padding: 0;
                 transition: 1s;
@@ -226,6 +233,9 @@ p, span{
     }
 }
 
+.active__menu-item{
+    border-bottom: 2px solid $color__pink;
+}
 .header__menu-item{
     &:not(:last-child){
         margin: 0 15px 0 0;
@@ -298,6 +308,9 @@ p, span{
 
 ._main__padding-top{
     padding: 60px 0 0 0;
+    @media screen and (max-width: 800px) {
+        padding: 0;
+    }
 }
 
 ._main__bg{
@@ -1093,6 +1106,9 @@ p, span{
             min-width: 355px;
             background: #fff;
             border-radius: 8px;
+            @media screen and (max-width: 400px) {
+                min-width: 100%;
+            }
             &:not(:last-child){
                 margin: 0 0 20px 0;
             }
@@ -1162,9 +1178,19 @@ p, span{
 // main__about start
 
 .main-about__section-1{
+    display: flex;
     .main-about__introduction{
+        padding: 0 40px 0 0;
+        @media screen and (max-width: 800px) {
+            border-bottom: 4px solid #E6E6F0;
+            padding: 0 0 20px 0;
+        }
         h2{
             margin: 0 0 20px 0;
+            @media screen and (max-width: 920px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
         }
         p{
             font-size: 21px;
@@ -1173,23 +1199,75 @@ p, span{
             &:first-of-type{
                 margin: 0 0 20px 0;
             }
+            @media screen and (max-width: 920px) {
+                font-size: 18px;
+                line-height: 26px;
+            }
         }
     }
     .main-about__advantages{
-        p{
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 21px;
-            color: #323264;
-            margin: 10px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: start;
+        min-width: 400px;
+        border-left: 4px solid #E6E6F0;
+        padding: 0 0 0 20px;
+        @media screen and (max-width: 800px) {
+            min-width: auto;
+            border: none;
+            padding: 0;
+            margin: 15px 0 0 0;
         }
-        span{
-            .clietns{
-                &::before{
-                    content: 'url(../img/main_about/clients.svg)';
+        .advantages-item{
+            &:not(:last-child){
+                margin: 0 0 40px 0;
+            }
+            @media screen and (max-width: 800px) {
+                &:not(:last-child){
+                    margin: 0 0 20px 0;
                 }
             }
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 21px;
+                color: #323264;
+                margin: 10px 0 0 0;
+            }
         }
+    }
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.team__img__desktop{
+    min-width: 100%;
+    max-height: 440px;
+    margin: 100px 0 80px 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width: 800px) {
+        margin: 30px 0 20px 0;
+    }
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+}
+.team__img__mobile{
+    display: none;
+    min-width: 100%;
+    max-height: 290px;
+    margin: 30px 0 20px 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width: 500px) {
+        display: block;
     }
 }
 
