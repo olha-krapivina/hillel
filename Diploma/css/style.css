@@ -218,6 +218,7 @@ p, span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #fff;
 }
 
 ._container-box {
@@ -264,6 +265,10 @@ p, span {
 
 ._nav__bg {
   background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
+
+._nav__bg-white {
+  background: #fff;
 }
 
 .header {
@@ -423,7 +428,7 @@ p, span {
   color: #24A3FF;
 }
 
-.header__menu-item .header__menu-link__light:hover, .header__menu-item .header__menu-link__light:focus, .header__menu-item .header__menu-link__light:active {
+.header__menu-item .header__menu-link__light:hover {
   color: #F0145A;
 }
 
@@ -511,6 +516,10 @@ p, span {
 ._main__bg-gray {
   width: 100%;
   background: #F5F5FA;
+}
+
+._main__br {
+  border-radius: 12px 12px 0px 0px;
 }
 
 .main__navtabs-box {
@@ -1468,27 +1477,27 @@ p, span {
 
 .main__article-box .main__article-content .article-item .acticle__img-2 {
   background: url(../img/main/svg/article_02.svg) no-repeat center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .main__article-box .main__article-content .article-item .acticle__img-3 {
   background: url(../img/main/svg/article_03.svg) no-repeat center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .main__article-box .main__article-content .article-item .acticle__img-4 {
   background: url(../img/main/svg/article_04.svg) no-repeat center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .main__article-box .main__article-content .article-item .acticle__img-5 {
   background: url(../img/main/svg/article_05.svg) no-repeat center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .main__article-box .main__article-content .article-item .acticle__img-6 {
   background: url(../img/main/svg/article_06.svg) no-repeat center;
-  background-size: auto 100%;
+  background-size: cover;
 }
 
 .main__article-box .main__article-content .article-item .article-item__content {
@@ -1596,12 +1605,12 @@ p, span {
 
 .main__article-box__mobile .main__article-content__mobile .article-item .acticle__img-2 {
   background: url(../img/main/svg/article_02.svg) no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .main__article-box__mobile .main__article-content__mobile .article-item .acticle__img-4 {
   background: url(../img/main/svg/article_04.svg) no-repeat center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .main__article-box__mobile .main__article-content__mobile .article-item .article-item__content {
@@ -1883,16 +1892,6 @@ p, span {
   opacity: 1;
 }
 
-.main-about__slider .carousel .carousel-indicators button.btn__mobile {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .main-about__slider .carousel .carousel-indicators button.btn__mobile {
-    display: block;
-  }
-}
-
 .main-about__slider .carousel .carousel-inner .carousel-item__mobile {
   display: none;
 }
@@ -1979,6 +1978,75 @@ p, span {
   .main-about__slider .carousel .carousel-inner .slide__inner .slide__item-4 {
     display: none;
   }
+}
+
+.main-team__section .main-team__title {
+  max-width: 865px;
+  margin: 0 0 80px 0;
+}
+
+.main-team__section .main-team__title h2 {
+  line-height: 50px;
+}
+
+.main-team__section .main-team__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.main-team__section .main-team__content .team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-team__section .main-team__content .team__item .team__img {
+  margin: 0 0 20px 0;
+}
+
+.main-team__section .main-team__content .team__item .team__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-team__section .main-team__content .team__item .team__intro .team__name p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #323264;
+}
+
+.main-team__section .main-team__content .team__item .team__intro .team__name span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+
+.main-team__section .main-team__content .team__item .team__intro .team__link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-team__section .main-team__content .team__item .team__intro .team__link a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url(../img/main_team/arrow-vector.svg) no-repeat center;
+  background-color: #F5F5FA;
 }
 
 .footer .footer__border {

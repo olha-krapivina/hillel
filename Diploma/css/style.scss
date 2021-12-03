@@ -54,6 +54,7 @@ p, span{
     min-width: 100%;
     display: flex;
     flex-direction: column;
+    background: #fff;
 }
 ._container-box{
     max-width: 1440px;
@@ -90,12 +91,18 @@ p, span{
 // 
 
 // header start
+
 ._header__bg{
-    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    background: linear-gradient(42.01deg, $color__dark-blue 14.33%, $color__dark-blue 51.39%, #7A425E 87.53%);
 }
 ._nav__bg{
-    background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    background: linear-gradient(42.01deg, $color__dark-blue 14.33%, $color__dark-blue 51.39%, #7A425E 87.53%);
 }
+._nav__bg-white{
+    background: #fff;
+}
+
+// 
 
 .header{
     padding: 135px 0 0 0;
@@ -233,6 +240,7 @@ p, span{
 .active__menu-item{
     border-bottom: 2px solid $color__pink;
 }
+
 .header__menu-item{
     &:not(:last-child){
         margin: 0 15px 0 0;
@@ -247,9 +255,7 @@ p, span{
     }
     .header__menu-link__light{
         color: $color__blue;
-        &:hover,
-        &:focus,
-        &:active{
+        &:hover{
             color: $color__pink;
         }
     }
@@ -269,7 +275,7 @@ p, span{
     }
     .header__bg-frame__big-p{
         height: 100%;
-        background: linear-gradient(180deg, rgba(50, 50, 100, 0) 80%, #323264 100%), url(../img/header/symbolP.png) no-repeat bottom;
+        background: linear-gradient(180deg, rgba(50, 50, 100, 0) 80%, $color__dark-blue 100%), url(../img/header/symbolP.png) no-repeat bottom;
         text-align: center;
         padding: 205px 0 20px 0;
         p{
@@ -311,7 +317,7 @@ p, span{
 }
 
 ._main__bg{
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background: linear-gradient(228.57deg, $color__dark-blue 11.93%, $color__dark-blue 57.17%, #643E72 87.46%);
     padding: 80px 0px;
     @media screen and (max-width: 920px) {
         padding: 60px 0px;
@@ -324,6 +330,10 @@ p, span{
 ._main__bg-gray{
     width: 100%;
     background: $color__gray-bg;
+}
+
+._main__br{
+    border-radius: 12px 12px 0px 0px;
 }
 
 // navtab
@@ -822,7 +832,7 @@ p, span{
     h5{
         font-size: 14px;
         font-weight: 700;
-        color: #323264;
+        color: $color__dark-blue;
         text-align: center;
         margin: 0 0 30px 0;
     }
@@ -1017,23 +1027,23 @@ p, span{
             }
             .acticle__img-2{
                 background: url(../img/main/svg/article_02.svg) no-repeat center;
-                background-size: auto 100%;
+                background-size: cover;
             }
             .acticle__img-3{
                 background: url(../img/main/svg/article_03.svg) no-repeat center;
-                background-size: auto 100%;
+                background-size: cover;
             }
             .acticle__img-4{
                 background: url(../img/main/svg/article_04.svg) no-repeat center;
-                background-size: auto 100%;
+                background-size: cover;
             }
             .acticle__img-5{
                 background: url(../img/main/svg/article_05.svg) no-repeat center;
-                background-size: auto 100%;
+                background-size: cover;
             }
             .acticle__img-6{
                 background: url(../img/main/svg/article_06.svg) no-repeat center;
-                background-size: auto 100%;
+                background-size: cover;
             }
             .article-item__content{
                 padding: 20px;
@@ -1117,11 +1127,11 @@ p, span{
             }
             .acticle__img-2{
                 background: url(../img/main/svg/article_02.svg) no-repeat center;
-                background-size: 100%;
+                background-size: cover;
             }
             .acticle__img-4{
                 background: url(../img/main/svg/article_04.svg) no-repeat center;
-                background-size: 100%;
+                background-size: cover;
             }
             .article-item__content{
                 padding: 20px;
@@ -1233,7 +1243,7 @@ p, span{
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 21px;
-                color: #323264;
+                color: $color__dark-blue;
                 margin: 10px 0 0 0;
             }
         }
@@ -1305,7 +1315,7 @@ p, span{
     h5{
         font-size: 14px;
         font-weight: 700;
-        color: #323264;
+        color: $color__dark-blue;
         text-align: center;
         margin: 0 0 30px 0;
     }
@@ -1401,6 +1411,66 @@ p, span{
 // main__about end
 
 
+// main__team start
+
+.main-team__section{
+    .main-team__title{
+        max-width: 865px;
+        margin: 0 0 80px 0;
+        h2{
+            line-height: 50px;
+        }
+    }
+
+    .main-team__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+
+        .team__item{
+            display: flex;
+            flex-direction: column;
+            .team__img{
+                margin: 0 0 20px 0;
+            }
+
+            .team__intro{
+                display: flex;
+                justify-content: space-between;
+                .team__name{
+                    p{
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 21px;
+                        color: $color__dark-blue;
+                    }
+                    span{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        color: $color__gray;
+                    }
+                }
+
+                .team__link{
+                    align-self: center;
+                    a{
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background: url(../img/main_team/arrow-vector.svg) no-repeat center;
+                        background-color: $color__gray-bg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// main__team end
+
+
 // footer start
 
 .footer{
@@ -1438,7 +1508,7 @@ p, span{
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 19px;
-                    color: #323264;
+                    color: $color__dark-blue;
                     @media screen and (max-width: 800px){
                         margin: 0 0 10px 0;
                     }
