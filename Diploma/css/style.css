@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'TT Norms';
   src: url(../fonts/TTNorms_Light/TTNorms-Light.ttf), url(../fonts/TTNorms_Light/TTNorms-Light.eot), url(../fonts/TTNorms_Light/TTNorms-Light.woff);
@@ -247,6 +248,12 @@ p, span {
       -ms-grid-row-align: center;
       align-self: center;
   margin: 0 10px;
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  background: #E6E6F0;
 }
 
 .pink__title {
@@ -2250,6 +2257,217 @@ p, span {
   .main-team-member__section .main-team-member__description .main-team-member__links .dot {
     display: none;
   }
+}
+
+.main-contacts__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 80px 0;
+}
+
+@media screen and (max-width: 920px) {
+  .main-contacts__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-contacts__section {
+    margin: 0 0 40px 0;
+  }
+}
+
+.main-contacts__section .contacts__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 412px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 920px) {
+  .main-contacts__section .contacts__links {
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+}
+
+.main-contacts__section .contacts__links p,
+.main-contacts__section .contacts__links .contact__phone {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #323264;
+  margin: 0 0 20px 0;
+}
+
+.main-contacts__section .contacts__links .contact__phone {
+  margin: 40px 0 20px 0;
+}
+
+.main-contacts__section .contacts__links .contanc__email {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #24A3FF;
+  margin: 0 0 40px 0;
+}
+
+.main-contacts__section .contacts__links .contanc__link {
+  position: relative;
+  display: inline-block;
+  width: 170px;
+  margin: 20px 0 0 0;
+}
+
+.main-contacts__section .contacts__links .contanc__link::after {
+  position: absolute;
+  content: 'Наша сторінка в фейсбуці';
+  top: 5px;
+  left: 48px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+
+.main-contacts__section .contacts__form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 527px;
+  background: #F5F5FA;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 920px) {
+  .main-contacts__section .contacts__form .form {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+.main-contacts__section .contacts__form .form h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#F0145A), to(#EF8080));
+  background-image: linear-gradient(90deg, #F0145A, #EF8080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 20px 0;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+@media screen and (max-width: 600px) {
+  .main-contacts__section .contacts__form .form h1 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.main-contacts__section .contacts__form .form p {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  margin: 0 0 10px 0;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.main-contacts__section .contacts__form .form input,
+.main-contacts__section .contacts__form .form textarea {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 0 10px 0 10px;
+  margin: 0 0 20px 0;
+}
+
+.main-contacts__section .contacts__form .form input::-webkit-input-placeholder,
+.main-contacts__section .contacts__form .form textarea::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+
+.main-contacts__section .contacts__form .form input:-ms-input-placeholder,
+.main-contacts__section .contacts__form .form textarea:-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+
+.main-contacts__section .contacts__form .form input::-ms-input-placeholder,
+.main-contacts__section .contacts__form .form textarea::-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+
+.main-contacts__section .contacts__form .form input::placeholder,
+.main-contacts__section .contacts__form .form textarea::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+
+.main-contacts__section .contacts__form .form input {
+  height: 47px;
+}
+
+.main-contacts__section .contacts__form .form textarea {
+  height: 180px;
+  resize: none;
+  padding: 10px;
+}
+
+.main-contacts__section .contacts__form .form .btn__form {
+  width: 250px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #fff;
+  background: #24A3FF;
+  -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+          box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
 }
 
 .footer .line {

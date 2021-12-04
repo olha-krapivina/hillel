@@ -79,6 +79,11 @@ p, span{
     align-self: center;
     margin: 0 10px;
 }
+.line{
+    width: 100%;
+    height: 4px;
+    background: #E6E6F0;
+}
 .pink__title{
     font-size: 42px;
     font-weight: 700;
@@ -1493,11 +1498,6 @@ p, span{
     }
 }
 
-// main__team end
-
-
-// main__team-member start
-
 .main-team-member__section{
     display: flex;
     margin: 0 0 60px 0;
@@ -1591,7 +1591,149 @@ p, span{
     }
 }
 
-// main__team-member end
+// main__team end
+
+
+// main__contacts start
+
+.main-contacts__section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 80px 0;
+    @media screen and (max-width: 920px) {
+        flex-direction: column;
+    }
+    @media screen and (max-width: 600px) {
+        margin: 0 0 40px 0;
+    }
+    .contacts__links{
+        display: flex;
+        flex-direction: column;
+        width: 412px;
+        align-self: center;
+        margin: 0 10px 0 0;
+        @media screen and (max-width: 920px) {
+            width: 100%;
+            margin: 0 0 40px 0;
+        }
+        p,
+        .contact__phone{
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 30px;
+            color: $color__dark-blue;
+            margin: 0 0 20px 0;
+        }
+        .contact__phone{
+            margin: 40px 0 20px 0;
+        }
+        .contanc__email{
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 30px;
+            color: $color__blue;
+            margin: 0 0 40px 0;
+        }
+        .contanc__link{
+            position: relative;
+            display: inline-block;
+            width: 170px;
+            margin: 20px 0 0 0;
+            &::after{
+                position: absolute;
+                content: 'Наша сторінка в фейсбуці';
+                top: 5px;
+                left: 48px;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $color__blue;
+            }
+        }
+    }
+
+    .contacts__form{
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 527px;
+            background: $color__gray-bg;
+            border-radius: 12px;
+            padding: 20px;
+            @media screen and (max-width: 920px) {
+                min-width: auto;
+                width: 100%;
+            }
+
+            h1{
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 38px;
+                background-image: linear-gradient(90deg, $color__pink, $color__light-pink);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 0 0 20px 0;
+                align-self: start;
+                @media screen and (max-width: 600px) {
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+            }
+            p{
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $color__gray;
+                margin: 0 0 10px 0;
+                align-self: start;
+            }
+
+            input,
+            textarea{
+                width: 100%;
+                background: #fff;
+                border-radius: 8px;
+                outline: none;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+                padding: 0 10px 0 10px;
+                margin: 0 0 20px 0;
+                &::placeholder{
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: $color__gray;
+                }
+            }
+            input{
+                height: 47px;
+            }
+            textarea{
+                height: 180px;
+                resize: none;
+                padding: 10px;
+            }
+
+            .btn__form{
+                width: 250px;
+                height: 50px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 17px;
+                color: #fff;
+                background: $color__blue;
+                box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+                border-radius: 12px;
+            }
+        }
+    }
+}
+
+// main__contacts end
 
 
 // footer start
