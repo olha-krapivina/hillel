@@ -100,8 +100,14 @@ p, span{
 ._header__bg{
     background: linear-gradient(42.01deg, $color__dark-blue 14.33%, $color__dark-blue 51.39%, #7A425E 87.53%);
 }
+._header__bg-service{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
 ._nav__bg{
     background: linear-gradient(42.01deg, $color__dark-blue 14.33%, $color__dark-blue 51.39%, #7A425E 87.53%);
+}
+._nav__bg-service{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 ._nav__bg-white{
     background: #fff;
@@ -245,6 +251,9 @@ p, span{
 .active__menu-item{
     border-bottom: 2px solid $color__pink;
 }
+.active__menu-item-white{
+    border-bottom: 2px solid #fff;
+}
 
 .header__menu-item{
     &:not(:last-child){
@@ -323,6 +332,16 @@ p, span{
 
 ._main__bg{
     background: linear-gradient(228.57deg, $color__dark-blue 11.93%, $color__dark-blue 57.17%, #643E72 87.46%);
+    padding: 80px 0px;
+    @media screen and (max-width: 920px) {
+        padding: 60px 0px;
+    }
+    @media screen and (max-width: 680px) {
+        padding: 45px 0px;
+    }
+}
+._main__bg-service{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     padding: 80px 0px;
     @media screen and (max-width: 920px) {
         padding: 60px 0px;
@@ -467,6 +486,26 @@ p, span{
 }
 
 // service
+.main__service-box__links{
+    margin: 65px 0 0 0;
+    @media screen and (max-width: 920px) {
+        margin: 45px 0 0 0;
+    }
+    @media screen and (max-width: 680px) {
+        margin: 0;
+    }
+    h2{
+        margin: 0 0 68px 0;
+        @media screen and (max-width: 920px) {
+            margin: 0 0 30px 0;
+        }
+        @media screen and (max-width: 680px) {
+            font-size: 32px;
+            line-height: 38px;
+            margin: 0 0 20px 0;
+        }
+    }
+}
 
 .main__service-box{
     margin: 80px 0 0 0;
