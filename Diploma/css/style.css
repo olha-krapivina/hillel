@@ -2126,6 +2126,15 @@ p, span {
   margin: 0 0 60px 0;
 }
 
+@media screen and (max-width: 867px) {
+  .main-team-member__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .main-team-member__section {
     margin: 0 0 40px 0;
@@ -2134,6 +2143,42 @@ p, span {
 
 .main-team-member__section .team-member__img {
   margin: 0 40px 0 0;
+}
+
+@media screen and (max-width: 980px) {
+  .main-team-member__section .team-member__img {
+    min-width: 335px;
+  }
+  .main-team-member__section .team-member__img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .main-team-member__section .team-member__img {
+    max-width: 335px;
+    margin: 0 0 20px 0;
+  }
+  .main-team-member__section .team-member__img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-team-member__section .team-member__img {
+    max-width: auto;
+    min-width: auto;
+  }
+  .main-team-member__section .team-member__img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-team-member__section .main-team-member__description h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .main-team-member__section .main-team-member__description p {
@@ -2153,6 +2198,12 @@ p, span {
   margin: 40px 0 10px 0;
 }
 
+@media screen and (max-width: 600px) {
+  .main-team-member__section .main-team-member__description span {
+    margin: 20px 0 10px 0;
+  }
+}
+
 .main-team-member__section .main-team-member__description .main-team-member__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2169,11 +2220,36 @@ p, span {
   color: #B3B3BA;
 }
 
+@media screen and (max-width: 500px) {
+  .main-team-member__section .main-team-member__description .main-team-member__links p {
+    margin: 0 0 10px 0;
+  }
+}
+
 .main-team-member__section .main-team-member__description .main-team-member__links a {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   color: #24A3FF;
+}
+
+@media screen and (max-width: 500px) {
+  .main-team-member__section .main-team-member__description .main-team-member__links a:first-of-type {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-team-member__section .main-team-member__description .main-team-member__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0 20px 0;
+  }
+  .main-team-member__section .main-team-member__description .main-team-member__links .dot {
+    display: none;
+  }
 }
 
 .footer .line {

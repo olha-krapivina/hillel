@@ -1501,16 +1501,42 @@ p, span{
 .main-team-member__section{
     display: flex;
     margin: 0 0 60px 0;
-    // @media screen and (max-width: 867px){
-    //     flex-direction: column;
-    // }
+    @media screen and (max-width: 867px){
+        flex-direction: column;
+    }
     @media screen and (max-width: 600px){
         margin: 0 0 40px 0;
     }
     .team-member__img{
         margin: 0 40px 0 0;
+        @media screen and (max-width: 980px) {
+            min-width: 335px;
+            img{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 867px) {
+            max-width: 335px;
+            margin: 0 0 20px 0;
+            img{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 375px) {
+            max-width: auto;
+            min-width: auto;
+            img{
+                width: 100%;
+            }
+        }
     }
     .main-team-member__description{
+        h1{
+            @media screen and (max-width: 500px){
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
         p{
             font-size: 18px;
             font-weight: 400;
@@ -1525,6 +1551,9 @@ p, span{
             text-transform: uppercase;
             color: $color__dark-blue;
             margin: 40px 0 10px 0;
+            @media screen and (max-width: 600px){
+                margin: 20px 0 10px 0;
+            }
         }
         .main-team-member__links{
             display: flex;
@@ -1536,12 +1565,27 @@ p, span{
                 font-weight: 400;
                 line-height: 19px;
                 color: $color__gray;
+                @media screen and (max-width: 500px) {
+                    margin: 0 0 10px 0;
+                }
             }
             a{
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 19px;
                 color: $color__blue;
+                @media screen and (max-width: 500px) {
+                    &:first-of-type{
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+            @media screen and (max-width: 500px) {
+                flex-direction: column;
+                margin: 10px 0 20px 0;
+                .dot{
+                    display: none;
+                }
             }
         }
     }
