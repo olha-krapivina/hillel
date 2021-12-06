@@ -2673,6 +2673,7 @@ p, span {
   -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
           box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .footer .line {

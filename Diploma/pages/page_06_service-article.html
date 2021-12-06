@@ -87,7 +87,33 @@
                         <h1 class="pink__title">IT та електронна комеція</h1>
                         <p>Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста.<br><br>До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
                         <div>
-                            <button class="button__popup">Безкоштовна консультація</button>
+                            <!-- <button class="button__popup">Безкоштовна консультація</button> -->
+                            <button type="button" class="button__popup" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Безкоштовна консультація
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <section class="main-contacts__section">
+                                        <div class="contacts__form">
+                                            <form class="form" action="#">
+                                                <div class="fx-row fx-jc-sb fx-ai-fs" style="width: 100%" >
+                                                    <h1>Ми хотіли б Вам допомогти</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <input type="text" name="name" id="" placeholder="Iм’я">
+                                                <textarea name="message" id="" placeholder="Повідомлення"></textarea>
+                                                <p>Як вам відповісти?</p>
+                                                <input type="tel" name="phone" id="" placeholder="Номер телефону">
+                                                <input type="email" name="email" id="" placeholder="Чи email">
+                                                <button class="btn__form">Надіслати запит</button>
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+
+                            <!--  -->
                         </div>
                     </div>
 
