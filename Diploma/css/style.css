@@ -266,6 +266,19 @@ p, span {
   -webkit-text-fill-color: transparent;
 }
 
+.button__style {
+  width: 250px;
+  height: 50px;
+  background: #24A3FF;
+  -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+          box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  cursor: pointer;
+}
+
 ._header__bg {
   background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 }
@@ -962,15 +975,6 @@ p, span {
 }
 
 .main__service-intro .service-title .button__popup {
-  width: 250px;
-  height: 50px;
-  background: #24A3FF;
-  -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-          box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
-  font-size: 14px;
-  line-height: 17px;
-  color: #fff;
   margin: 40px 0 0 0;
 }
 
@@ -1601,18 +1605,8 @@ p, span {
 
 ._main__container-article .fume button {
   position: absolute;
-  width: 250px;
-  height: 50px;
   left: calc(50% - 125px);
   top: 95px;
-  background: #24A3FF;
-  font-size: 14px;
-  line-height: 17px;
-  color: #fff;
-  -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-          box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
-  cursor: pointer;
 }
 
 .main__article-box {
@@ -1832,17 +1826,7 @@ p, span {
 }
 
 .main__article-box__mobile .main__article-content__mobile button {
-  width: 250px;
-  height: 50px;
-  background: #24A3FF;
-  font-size: 14px;
-  line-height: 17px;
-  color: #fff;
-  -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-          box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-  border-radius: 12px;
   margin: 20px 0 40px 0;
-  cursor: pointer;
 }
 
 .main__article-box__mobile .main__article-content__mobile .line {

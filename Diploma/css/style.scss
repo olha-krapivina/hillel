@@ -92,6 +92,17 @@ p, span{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.button__style{
+    width: 250px;
+    height: 50px;
+    background: $color__blue;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    cursor: pointer;
+}
 
 // 
 
@@ -668,14 +679,6 @@ p, span{
             }
         }
         .button__popup{
-            width: 250px;
-            height: 50px;
-            background: $color__blue;
-            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-            border-radius: 12px;
-            font-size: 14px;
-            line-height: 17px;
-            color: #fff;
             margin: 40px 0 0 0;
         }
     }
@@ -1112,17 +1115,8 @@ p, span{
         }
         button{
             position: absolute;
-            width: 250px;
-            height: 50px;
             left: calc(50% - 125px);
             top: 95px;
-            background: $color__blue;
-            font-size: 14px;
-            line-height: 17px;
-            color: #fff;
-            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-            border-radius: 12px;
-            cursor: pointer;
         }
     }
 }
@@ -1296,16 +1290,7 @@ p, span{
             margin: 0 0 40px 0;
         }
         button{
-            width: 250px;
-            height: 50px;
-            background: $color__blue;
-            font-size: 14px;
-            line-height: 17px;
-            color: #fff;
-            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
-            border-radius: 12px;
             margin: 20px 0 40px 0;
-            cursor: pointer;
         }
         .line{
             width: 100%;
@@ -1479,12 +1464,6 @@ p, span{
             .active{
                 opacity: 1;
             }
-            // button.btn__mobile{
-            //     display: none;
-            //     @media screen and (max-width: 600px) {
-            //         display: block;
-            //     }
-            // }
         }
 
         .carousel-inner{
