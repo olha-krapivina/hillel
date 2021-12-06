@@ -1821,6 +1821,39 @@ p, span{
 // main__contacts end
 
 
+// main__public start
+
+.main-public__section{
+    .main-public__navtab{
+        display: flex;
+        justify-content: center;
+        .nav-pills{
+            display: inline-flex;
+            background: #E6E6F0;
+            border-radius: 12px;
+            padding: 2px;
+            .nav-item{
+                .nav-link{
+                    width: 127px;
+                    height: 36px;
+                    border-radius: 10px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    color: $color__dark-blue;
+                    background: #E6E6F0;
+                }
+                .active{
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+// main__public end
+
+
 // footer start
 
 .footer{
