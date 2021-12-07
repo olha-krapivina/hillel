@@ -1251,7 +1251,7 @@ p, span{
         .article-item-3,
         .article-item-5,
         .article-item-6{
-            @media screen and (max-width: 400px) {
+            @media screen and (max-width: 550px) {
                 display: none;
             }
         }
@@ -1926,10 +1926,13 @@ p, span{
                 }
             }
         }
-        .article-item-3,
-        .article-item-5,
-        .article-item-6{
-            @media screen and (max-width: 400px) {
+        .card-item-3,
+        .card-item-4,
+        .card-item-7,
+        .card-item-8,
+        .card-item-9,
+        .card-item-12{
+            @media screen and (max-width: 550px) {
                 display: none;
             }
         }

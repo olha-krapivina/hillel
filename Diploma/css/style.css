@@ -1781,7 +1781,7 @@ p, span {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   .main__article-box .main__article-content .article-item-3,
   .main__article-box .main__article-content .article-item-5,
   .main__article-box .main__article-content .article-item-6 {
@@ -2753,10 +2753,13 @@ p, span {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .main-public__cards-section .public__cards .article-item-3,
-  .main-public__cards-section .public__cards .article-item-5,
-  .main-public__cards-section .public__cards .article-item-6 {
+@media screen and (max-width: 550px) {
+  .main-public__cards-section .public__cards .card-item-3,
+  .main-public__cards-section .public__cards .card-item-4,
+  .main-public__cards-section .public__cards .card-item-7,
+  .main-public__cards-section .public__cards .card-item-8,
+  .main-public__cards-section .public__cards .card-item-9,
+  .main-public__cards-section .public__cards .card-item-12 {
     display: none;
   }
 }
