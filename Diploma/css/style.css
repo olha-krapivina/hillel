@@ -319,6 +319,32 @@ p, span {
   border-radius: 0px 0px 12px 12px;
 }
 
+._header__shadow {
+  position: relative;
+}
+
+._header__shadow::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+}
+
+._header__shadow::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  width: calc(100% - 80px);
+  height: 10px;
+  background: #e7e7f2;
+  border-radius: 0px 0px 12px 12px;
+}
+
 ._nav__bg {
   background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 }
