@@ -1823,8 +1823,12 @@ p, span{
 
 // main__public start
 
-.main-public__navtab-section{
-    .public__navtab{
+.main-public__switcher-section{
+    padding: 40px 0;
+    @media screen and (max-width: 800px) {
+        padding: 20px 0;
+    }
+    .switcher{
         display: flex;
         justify-content: center;
         .nav-pills{
@@ -1850,6 +1854,88 @@ p, span{
         }
     }
 }
+
+.main-public__cards-section{
+    padding: 0 0 60px 0;
+    @media screen and (max-width: 720px) {
+        padding: 0 0 40px 0;
+    }
+    .public__cards{
+        columns: 3;
+        column-gap: 40px;
+        margin: 0 0 40px 0;
+    
+        @media screen and (max-width: 920px) {
+            column-gap: 20px;
+            margin: 0 0 20px 0;
+        }
+        @media screen and (max-width: 720px) {
+            columns: 2;
+        }
+        @media screen and (max-width: 550px) {
+            columns: 1;
+        }
+        .card-item{
+            background: #fff;
+            border-radius: 8px;
+            margin: 0 0 40px 0;
+            @media screen and (max-width: 720px) {
+                margin: 0 0 20px 0;
+            }
+            .card__img{
+                max-width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .card-item__content{
+                padding: 20px;
+                .line{
+                    height: 4px;
+                    background: #E6E6F0;
+                    margin: 20px 0;
+                    @media screen and (max-width: 400px) {
+                        display: none;
+                    }
+                }
+                a{
+                    display: inline-block;
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-weight: 500;
+                    color: $color__blue;
+                    margin: 0 0 10px 0;
+                }
+                span{
+                    display: block;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 2px;
+                    color: $color__gray;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    @media screen and (max-width: 400px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .article-item-3,
+        .article-item-5,
+        .article-item-6{
+            @media screen and (max-width: 400px) {
+                display: none;
+            }
+        }
+    }
+}
+
 
 // main__public end
 
