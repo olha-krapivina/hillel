@@ -298,8 +298,21 @@ p, span {
 }
 
 ._header__bg_img-service {
-  background: url(../img/main_services/cover.png) no-repeat top, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background: url(../img/main_services/cover.png) no-repeat top, linear-gradient(195.57deg, #323264 40%, #323264 72.17%, #643E72 89.46%);
   background-size: 100% auto;
+}
+
+@media screen and (max-width: 1440px) {
+  ._header__bg_img-service {
+    background: url(../img/main_services/cover.png) no-repeat top, linear-gradient(195.57deg, #323264 40%, #323264 72.17%, #643E72 89.46%);
+    background-size: content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ._header__bg_img-service {
+    background: url(../img/main_services/cover.png) no-repeat top, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  }
 }
 
 ._header__br {
