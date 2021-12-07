@@ -2602,7 +2602,7 @@ p, span {
   cursor: pointer;
 }
 
-.main-public__section .main-public__navtab {
+.main-public__navtab__section .public__navtab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2611,7 +2611,7 @@ p, span {
           justify-content: center;
 }
 
-.main-public__section .main-public__navtab .nav-pills {
+.main-public__navtab__section .public__navtab .nav-pills {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2620,7 +2620,7 @@ p, span {
   padding: 2px;
 }
 
-.main-public__section .main-public__navtab .nav-pills .nav-item .nav-link {
+.main-public__navtab__section .public__navtab .nav-pills .nav-item .nav-link {
   width: 127px;
   height: 36px;
   border-radius: 10px;
@@ -2631,7 +2631,7 @@ p, span {
   background: #E6E6F0;
 }
 
-.main-public__section .main-public__navtab .nav-pills .nav-item .active {
+.main-public__navtab__section .public__navtab .nav-pills .nav-item .active {
   background: #fff;
 }
 
