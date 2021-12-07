@@ -70,6 +70,14 @@ p, span{
     margin: 0 auto;
     padding: 0 20px;
 }
+._container__public{
+    max-width: 910px;
+    margin: 0 auto;
+}
+._container_pd{
+    max-width: 100%;
+    padding: 0 20px;
+}
 
 .dot{
     width: 7px;
@@ -1134,9 +1142,6 @@ p, span{
 
 .main__article-box{
     padding: 40px 0 0 0;
-    // @media screen and (max-width: 600px) {
-    //     display: none;
-    // }
     h5{
         margin: 0 0 40px 0;
         @media screen and (max-width: 550px) {
@@ -1176,38 +1181,21 @@ p, span{
             columns: 1;
         }
         .article-item{
-            // max-width: 413px;
             background: #fff;
             border-radius: 8px;
             margin: 0 0 40px 0;
-            @media screen and (max-width: 920px) {
+            @media screen and (max-width: 720px) {
                 margin: 0 0 20px 0;
             }
             .article__img{
-                width: 100%;
-                height: 233px;
-                border-radius: 8px 8px 0 0;
+                max-width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
-            .acticle__img-2{
-                background: url(../img/main/svg/article_02.svg) no-repeat center;
-                background-size: cover;
-            }
-            .acticle__img-3{
-                background: url(../img/main/svg/article_03.svg) no-repeat center;
-                background-size: cover;
-            }
-            .acticle__img-4{
-                background: url(../img/main/svg/article_04.svg) no-repeat center;
-                background-size: cover;
-            }
-            .acticle__img-5{
-                background: url(../img/main/svg/article_05.svg) no-repeat center;
-                background-size: cover;
-            }
-            .acticle__img-6{
-                background: url(../img/main/svg/article_06.svg) no-repeat center;
-                background-size: cover;
-            }
+
             .article-item__content{
                 padding: 20px;
                 .line{
@@ -1939,6 +1927,145 @@ p, span{
     }
 }
 
+.public-article__section{
+    .public__img-title{
+        max-width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .public__content{
+        border-bottom: 4px solid #E6E6F0;
+        padding: 40px 0;
+        @media screen and (max-width: 600px) {
+            padding: 20px 0 40px 0;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+        .public__intro-article{
+            margin: 0 0 40px 0;
+            h2{
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 38px;
+                color: $color__dark-blue;
+                @media screen and (max-width: 600px) {
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+            }
+            span{
+                font-size: 12px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $color__gray;
+            }
+            .line{
+                margin: 40px 0;
+                @media screen and (max-width: 600px) {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .public__post{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .pink__title{
+                line-height: 50px;
+                // margin: 0 0 40px 0;
+                @media screen and (max-width: 600px) {
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+            }
+            h5{
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 28px;
+                color: $color__dark-blue;
+                margin: 40px 0 25px 0;
+                @media screen and (max-width: 600px) {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+            ol{
+                margin: 20px 0 25px 30px;
+                li{
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    list-style: decimal;
+                    color: $color__pink;
+                    &:not(:last-child){
+                        margin: 0 0 15px 0;
+                    }
+                }
+            }
+            .figure{
+                max-width: 640px;
+                margin: 40px 0;
+                @media screen and (max-width: 600px) {
+                    margin: 20px 0;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                figcaption{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: center;
+                    color: $color__gray;
+                    margin: 15px 0 0 0;
+                }
+            }
+        }
+    }
+
+    .public__icons{
+        margin: 20px 0 0 0;
+        .public__list{
+            display: flex;
+            @media screen and (max-width: 600px) {
+                justify-content: center;
+            }
+            .public__item{
+                &:not(:last-child){
+                    margin: 0 10px 0 0;
+                }
+                .public__link{
+                    display: inline-block;
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 12px;
+                }
+                .public__link__facebook{
+                    background: url(../img/main_public/icon-facebook.png) no-repeat center;
+                    background-color: $color__gray-bg;
+                }
+                .public__link__telegram{
+                    background: url(../img/main_public/icon-telegram.png) no-repeat center;
+                    background-color: $color__gray-bg;
+                }
+                .public__link__linkedin{
+                    background: url(../img/main_public/icon-linkedin.png) no-repeat center;
+                    background-color: $color__gray-bg;
+                }
+            }
+        }
+    }
+}
 
 // main__public end
 
