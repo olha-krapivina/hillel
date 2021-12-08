@@ -530,7 +530,7 @@ p, span {
   color: #F0145A;
 }
 
-.header__nav .header__links .header__menu-list .header__menu-item .active__link {
+.header__nav .header__links .header__menu-list .header__menu-item .active__link-pink {
   color: #F0145A;
 }
 
@@ -560,7 +560,7 @@ p, span {
   }
 }
 
-.active__menu-item {
+.active__menu-item-pink {
   border-bottom: 2px solid #F0145A;
 }
 
