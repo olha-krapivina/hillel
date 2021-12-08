@@ -177,7 +177,7 @@ p, span{
     padding: 135px 0 0 0;
 }
 
-.header__nav-desktop{
+.header__nav{
     position: fixed;
     width: 100%;
     top: 0;
@@ -186,90 +186,62 @@ p, span{
     margin: 30px 0 0 0;
     z-index: 99;
 
-    @media screen and (max-width: 920px){
-        display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 1210px) {
+        padding: 10px 20px;
+        margin: 10px 0 0 0;
     }
 
-    .header__content{
-        .header__contacts{
-            margin: 0 0 16px 0;
-            a,
-            span,
-            p{
-                color: #fff;
-            }
-            span{
-                font-size: 12px;
-                letter-spacing: 1px;
-            }
-            p,a{
-                font-size: 16px;
-            }
-            p{
-                font-weight: 300;
-            }
-            ._light{
-                color: $color__gray;
-            }
-
-            .change-lg{
-                .btn-language{
-                    width: 29px;
-                    height: 24px;
-                    background: none;
-                    border-radius: 8px;
-                    font-size: 12px;
-                    font-weight: 500;
-                    letter-spacing: 1px;
-                    color: #fff;
-                    padding: 0;
-                    transition: 1s;
-
-                    &:first-child,
-                    &:hover,
-                    &:focus,
-                    &:active{
-                        background-color: $color__pink;
-                    }
-                }
-                .btn-language__light{
-                    color: $color__gray;
-                    &:first-child,
-                    &:hover,
-                    &:focus,
-                    &:active{
-                        color: #fff;
-                    }
-                }
-            }
+    .header__logo{
+        max-height: 65px;
+        grid-row: 1/3;
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+        @media screen and (max-width: 1210px) {
+            max-height: 30px;
+            grid-row: 2/3;
         }
     }
-}
 
-.header__nav-mobile{
-    display: none;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 10px 20px;
-    margin: 10px 0 0 0;
-    z-index: 99;
-
-    @media screen and (max-width: 920px){
-        display: block;
-    }
-
-    .header__content{
-        margin: 0 0 20px 0;
-        & > a{
+    .header__contacts{
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+        // margin: 0 0 16px 0;
+        padding: 8px 0;
+        @media screen and (max-width: 1210px) {
+            grid-column: 1/3;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+        a,
+        p{
+            color: #fff;
             font-size: 16px;
-            line-height: 19px;
-            // color: #fff;
-            align-self: center;
+        }
+        p{
+            font-weight: 300;
+        }
+        ._light{
             color: $color__gray;
         }
+        .dot,
+        .header_aderess,
+        .header__link-fb{
+            @media screen and (max-width: 1210px) {
+                display: none;
+            }
+        }
+
         .change-lg{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             .btn-language{
                 width: 29px;
                 height: 24px;
@@ -278,8 +250,7 @@ p, span{
                 font-size: 12px;
                 font-weight: 500;
                 letter-spacing: 1px;
-                // color: #fff;
-                color: $color__gray;
+                color: #fff;
                 padding: 0;
                 transition: 1s;
 
@@ -287,22 +258,71 @@ p, span{
                 &:hover,
                 &:focus,
                 &:active{
-                    color: #fff;
                     background-color: $color__pink;
+                }
+            }
+            .btn-language__light{
+                color: $color__gray;
+                &:first-child,
+                &:hover,
+                &:focus,
+                &:active{
+                    color: #fff;
                 }
             }
         }
     }
 
-    .burger{
-        width: 18px;
-        height: 32px;
-        background: url(../img/header/hamburger-modile.svg) no-repeat center;
-    }
-    .burger__black{
-        width: 18px;
-        height: 32px;
-        background: url(../img/header/hamburger-modile__black.png) no-repeat center;
+    .header__links{
+        display: flex;
+        justify-content: flex-end;
+        grid-row: 2/3;
+        .header__menu-list{
+            @media screen and (max-width: 850px) {
+                display: none;
+            }
+            .header__menu-item{
+                &:not(:last-child){
+                    margin: 0 15px 0 0;
+                }
+                .header__menu-link{
+                    color: #fff;
+                    font-weight: 500;
+                    transition: 1s;
+                    &:hover{
+                        color: $color__pink;
+                    }
+                }
+                .header__menu-link__light{
+                    color: $color__blue;
+                    &:hover{
+                        color: $color__pink;
+                    }
+                }
+                .active__link{
+                    color: $color__pink;
+                }
+            }
+        }
+
+        .burger{
+            @media screen and (max-width: 850px) {
+                display: block;
+            }
+            display: none;
+            width: 18px;
+            height: 32px;
+            background: url(../img/header/hamburger-modile.svg) no-repeat center;
+        }
+        .burger__black{
+            @media screen and (max-width: 850px) {
+                display: block;
+            }
+            display: none;
+            width: 18px;
+            height: 32px;
+            background: url(../img/header/hamburger-modile__black.png) no-repeat center;
+        }
     }
 }
 
@@ -311,29 +331,6 @@ p, span{
 }
 .active__menu-item-white{
     border-bottom: 2px solid #fff;
-}
-
-.header__menu-item{
-    &:not(:last-child){
-        margin: 0 15px 0 0;
-    }
-    .header__menu-link{
-        color: #fff;
-        font-weight: 500;
-        transition: 1s;
-        &:hover{
-            color: $color__pink;
-        }
-    }
-    .header__menu-link__light{
-        color: $color__blue;
-        &:hover{
-            color: $color__pink;
-        }
-    }
-    .active__link{
-        color: $color__pink;
-    }
 }
 
 .header__bg-frame__small-p{
