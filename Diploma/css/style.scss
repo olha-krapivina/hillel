@@ -1378,6 +1378,33 @@ p, span{
     }
 }
 
+.team__img{
+    position: relative;
+    max-width: 100%;
+    // margin: 100px 0 80px 0;
+    img{
+        width: 100%;
+    }
+    span{
+        display: inline-block;
+        position: absolute;
+        top: calc(50% - 56px);
+        left: calc(50% - 482px);
+        // text-align: center;
+        font-size: 96px;
+        line-height: 113px;
+        text-align: center;
+        letter-spacing: 63px;
+        text-transform: uppercase;
+        color: #fff;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        direction: rtl;
+        text-indent: -63px;
+        // margin: 0 0 0 32px;
+    }
+}
+
 .team__img__desktop{
     min-width: 100%;
     min-height: 440px;
