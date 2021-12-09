@@ -1470,46 +1470,37 @@ p, span{
         }
 
         .carousel-inner{
-            .carousel-item__mobile{
-                display: none;
-                @media screen and (max-width: 600px) {
-                    display: block;
-                }
-            }
             .slide__inner{
                 display: flex;
                 justify-content: space-between;
                 .slide__item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 300px;
                     height: 109px;
                     border-radius: 12px;
-                    @media screen and (max-width: 600px) {
+                    background: #fff;
+                    img{
+                        @media screen and (max-width: 400px) {
+                            max-height: 32px;
+                        }
+                    }
+                    @media screen and (max-width: 400px) {
                         width: 157px;
                         height: 57px;
                     }
                 }
                 .slide__item-1{
-                    background: url(../img/main_about/achiev_01.svg) no-repeat center;
-                    background-color: #fff;
                     margin: 0 40px 0 0;
-                    @media screen and (max-width: 600px) {
-                        background: url(../img/main_about/achiev-mobile_01.svg) no-repeat center;
-                        background-color: #fff;
-                    }
                 }
                 .slide__item-2{
-                    background: url(../img/main_about/achiev_02.svg) no-repeat center;
-                    background-color: #fff;
                     margin: 0 40px 0 0;
                     @media screen and (max-width: 600px) {
-                        background: url(../img/main_about/achiev-mobile_02.svg) no-repeat center;
-                        background-color: #fff;
                         margin: 0;
                     }
                 }
                 .slide__item-3{
-                    background: url(../img/main_about/achiev_03.svg) no-repeat center;
-                    background-color: #fff;
                     margin: 0 40px 0 0;
                     @media screen and (max-width: 920px) {
                         margin: 0;
@@ -1519,8 +1510,6 @@ p, span{
                     }
                 }
                 .slide__item-4{
-                    background: url(../img/main_about/achiev_04.svg) no-repeat center;
-                    background-color: #fff;
                     @media screen and (max-width: 920px) {
                         display: none;
                     }
