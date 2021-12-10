@@ -2779,6 +2779,8 @@ p, span {
 
 .main-contacts__section .contacts__form .form p {
   font-size: 14px;
+  font-weight: 700;
+  text-align: left;
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;

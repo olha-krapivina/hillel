@@ -71,31 +71,35 @@
                         <p>Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста.<br><br>До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
                         
                         <div>
-                            <button type="button" class="button__style button__popup" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="button__style button__popup" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 Безкоштовна консультація
                             </button>
 
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <section class="main-contacts__section">
-                                        <div class="contacts__form">
-                                            <form class="form" action="#">
-                                                <div class="fx-row fx-jc-sb fx-ai-fs" style="width: 100%" >
+                                        <div class="modal-content contacts__form" style="border-radius: 12px;">
+                                            <form action="#" class="form" style="padding: 0;">
+                                                <div class="modal-header fx-row fx-jc-sb fx-ai-fs" style="width: 100%; border: none; border-radius: 12px; padding: 20px 20px 0 20px;">
                                                     <h1>Ми хотіли б Вам допомогти</h1>
-                                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                                                     <button type="button" style="background: none; border: none;" data-bs-dismiss="modal" aria-label="Close"><img src="../img/main_services/close-cross.svg" alt="Close"></button>
                                                 </div>
-                                                <input type="text" name="name" id="" placeholder="Iм’я">
-                                                <textarea name="message" id="" placeholder="Повідомлення"></textarea>
-                                                <p>Як вам відповісти?</p>
-                                                <input type="tel" name="phone" id="" placeholder="Номер телефону">
-                                                <input type="email" name="email" id="" placeholder="Чи email">
-                                                <button class="btn__form">Надіслати запит</button>
+                                                <div class="modal-body" style="width: 100%; border: none; border-radius: 0px; padding: 0 20px;">
+                                                    <input type="text" name="name" id="" placeholder="Iм’я">
+                                                    <textarea name="message" id="" placeholder="Повідомлення"></textarea>
+                                                    <p class="fx-as-fs">Як вам відповісти?</p>
+                                                    <input type="tel" name="phone" id="" placeholder="Номер телефону">
+                                                    <input type="email" name="email" id="" placeholder="Чи email">
+                                                </div>
+                                                <div class="modal-footer fx-row fx-jc-c" style="width: 100%; border: none; border-radius: 0px; padding: 0 20px 20px 20px;">
+                                                    <button class="btn__form">Надіслати запит</button>
+                                                </div>
                                             </form>
                                         </div>
                                     </section>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
