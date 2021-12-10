@@ -723,8 +723,13 @@ p, span{
         margin: 0 0 80px 0;
 
         @media screen and (max-width: 600px) {
-            align-items: flex-start;
             margin: 0 0 40px 0;
+        }
+
+        img{
+            @media screen and (max-width: 600px) {
+                align-self: start;
+            }
         }
 
         h1{
@@ -732,6 +737,9 @@ p, span{
             @media screen and (max-width: 750px) {
                 font-size: 32px;
                 line-height: 38px;
+            }
+            @media screen and (max-width: 600px) {
+                align-self: start;
             }
         }
         p{
@@ -1388,17 +1396,7 @@ p, span{
     }
     background: url(../img/main_about/image_team.png) no-repeat center;
     background-size: cover;
-    img{
-        // width: 100%;
-        // height: 100%;
-        // object-fit: fill;
-        // object-position: center;
-    }
     span{
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
         font-size: 96px;
         line-height: 113px;
         letter-spacing: 63px;
@@ -2084,7 +2082,6 @@ p, span{
             align-items: center;
             .pink__title{
                 line-height: 50px;
-                // margin: 0 0 40px 0;
                 @media screen and (max-width: 600px) {
                     font-size: 32px;
                     line-height: 38px;
@@ -2177,9 +2174,6 @@ p, span{
 // footer start
 
 .footer{
-    // .footer__border{
-    //     border-top: 4px solid #E6E6F0;
-    // }
     .line{
         width: 100%;
         height: 4px;

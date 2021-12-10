@@ -1153,10 +1153,15 @@ p, span {
 
 @media screen and (max-width: 600px) {
   .main__service-intro .service-title {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     margin: 0 0 40px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__service-intro .service-title img {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
 }
 
@@ -1168,6 +1173,14 @@ p, span {
   .main__service-intro .service-title h1 {
     font-size: 32px;
     line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__service-intro .service-title h1 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
 }
 
