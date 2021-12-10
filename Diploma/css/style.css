@@ -2432,29 +2432,26 @@ p, span {
   }
 }
 
-.main-team__section .main-team__content .team__item .team__img {
+.main-team__section .main-team__content .team__item .team__member {
   margin: 0 0 20px 0;
 }
 
 @media screen and (max-width: 600px) {
-  .main-team__section .main-team__content .team__item .team__img {
+  .main-team__section .main-team__content .team__item .team__member {
     width: 158px;
     margin: 0 20px 0 0;
   }
 }
 
 @media screen and (max-width: 470px) {
-  .main-team__section .main-team__content .team__item .team__img {
+  .main-team__section .main-team__content .team__item .team__member {
     min-width: 158px;
   }
 }
 
-.main-team__section .main-team__content .team__item .team__img a {
+.main-team__section .main-team__content .team__item .team__member a img {
   width: 100%;
-}
-
-.main-team__section .main-team__content .team__item .team__img a img {
-  width: 100%;
+  height: 100%;
 }
 
 .main-team__section .main-team__content .team__item .team__intro {
