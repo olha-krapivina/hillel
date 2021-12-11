@@ -1359,17 +1359,17 @@ p, span {
 }
 
 .main__slider-box .carousel .carousel-inner .slide__inner .slide__img-min__01 {
-  background: url(../img/main/svg/people_01.svg) no-repeat center;
+  background: url(../img/main/people_01.png) no-repeat center;
   background-size: 100% auto;
 }
 
 .main__slider-box .carousel .carousel-inner .slide__inner .slide__img-min__02 {
-  background: url(../img/main/svg/people_02.svg) no-repeat center;
+  background: url(../img/main/people_02.png) no-repeat center;
   background-size: 100% auto;
 }
 
 .main__slider-box .carousel .carousel-inner .slide__inner .slide__img-min__03 {
-  background: url(../img/main/svg/people_03.svg) no-repeat center;
+  background: url(../img/main/people_03.png) no-repeat center;
   background-size: 100% auto;
 }
 
